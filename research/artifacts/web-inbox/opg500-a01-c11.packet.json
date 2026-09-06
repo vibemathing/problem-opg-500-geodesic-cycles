@@ -13,7 +13,7 @@
   "graph_id": "graph:opg500-initial-v1",
   "obligation_id": "obligation:opg500-root",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg500-a01-c11-core-proof-terms", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg500-a01-c11-core-proof-terms", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": 14, "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/14"},
   "objective": "C11: expand the frozen C09 necessary-condition certificate into explicit Init-only proof terms, audit the generated propositional fragment, and isolate C10 minimum-outside-span transfer with its graph hypotheses visible.",
   "candidate_artifacts": [
     {"candidate_id": "candidate:opg500-a01-c11-necessary-pattern", "kind": "formalization", "locator": "research/artifacts/candidates/opg500-a01-c11/NecessaryPattern.lean", "sha256": "cfcfe5cf0badf467ecbf1a2c8c3498307b2c4a2564fd4ffafd7e7eaa36133b94"},
