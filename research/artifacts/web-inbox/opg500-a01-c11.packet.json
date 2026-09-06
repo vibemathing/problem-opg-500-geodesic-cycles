@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762672, "node_id": "R_kgDOUP0SsA", "default_branch": "main"},
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "31b64fe0dadd119feb9052627ad9bfbfb6ac506f",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-root",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg500-a01-c11-core-proof-terms", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": 14, "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/14"},
+  "objective": "C11: expand the frozen C09 necessary-condition certificate into explicit Init-only proof terms, audit the generated propositional fragment, and isolate C10 minimum-outside-span transfer with its graph hypotheses visible.",
+  "candidate_artifacts": [
+    {"candidate_id": "candidate:opg500-a01-c11-necessary-pattern", "kind": "formalization", "locator": "research/artifacts/candidates/opg500-a01-c11/NecessaryPattern.lean", "sha256": "cfcfe5cf0badf467ecbf1a2c8c3498307b2c4a2564fd4ffafd7e7eaa36133b94"},
+    {"candidate_id": "candidate:opg500-a01-c11-minimum-outside", "kind": "formalization", "locator": "research/artifacts/candidates/opg500-a01-c11/MinimumOutside.lean", "sha256": "3350f198b1d2fdf2b85a45ca1ddf7391199a81a8c03620928fc8d5b6462d52b0"},
+    {"candidate_id": "candidate:opg500-a01-c11-emitter", "kind": "formalization", "locator": "research/artifacts/candidates/opg500-a01-c11/emit.py", "sha256": "5e4c4671456934ae9edf2e2a555cd54c40d717fc6fc803b181c11e0fb67cd580"},
+    {"candidate_id": "candidate:opg500-a01-c11-fragment-checker", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c11/audit_terms.py", "sha256": "55103055d01dcc12a3b69e8c5f5e26057968bfa6627e48d5b9f86edf3088d364"},
+    {"candidate_id": "candidate:opg500-a01-c11-execution", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c11/execution.json", "sha256": "4b7cf9c1237e169fec8057f90100d5868d4894f61c14eeb21dbda494123b9437"},
+    {"candidate_id": "candidate:opg500-a01-c11-faithfulness", "kind": "formalization", "locator": "research/artifacts/candidates/opg500-a01-c11/faithfulness.md", "sha256": "e829661eaf0936c6de83d597eb4e0ec163e60e500dff01de41ffc4a25a7adc8a"}
+  ],
+  "atomic_claims": [
+    {"claim_id": "claim:opg500-c11-certificate-expansion", "text": "The frozen 76-clause C09 certificate expands to an explicit propositional contradiction retaining all 15 nodes, 89 unit steps and eight conflict leaves.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c11-fragment-audit", "text": "A separate small checker reads the emitted proof text, checks its 76 premises against the frozen clauses, and rejects three corrupted terms; this is not Lean replay.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c11-minimum-transfer", "text": "The abstract minimum-outside theorem derives goodness from closure, strict two-child splitting and an explicit minimum witness; graph realization remains required.", "status": "candidate"}
+  ],
+  "assumptions": ["The canonical graph, vertex-geodesic and peripheral definitions are unchanged.", "The C09 necessary clauses require its full metric bridge, including strict-margin perturbation and unique shortest paths.", "The C10 descent slice keeps span closure, strict splitting and existence of a minimum as explicit hypotheses."],
+  "risks": ["No Lean executable was present; emitted sources are not elaborated or kernel replayed.", "The custom proof-fragment checker is generator-side, not an admitted verifier.", "Neither abstract theorem is a formalization of the full graph root statement.", "Classical reasoning is explicit; actual Lean axiom dependency output is unavailable."],
+  "open_obligations": ["obligation:opg500-finite-linear-characterization", "obligation:opg500-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "problem-library/records/canonical-problems.jsonl", "revision": "31b64fe0dadd119feb9052627ad9bfbfb6ac506f", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/records/obligation-graphs.jsonl", "revision": "31b64fe0dadd119feb9052627ad9bfbfb6ac506f", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c09/unsat-tree.json", "revision": "31b64fe0dadd119feb9052627ad9bfbfb6ac506f", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c09/root-counterexample.md", "revision": "31b64fe0dadd119feb9052627ad9bfbfb6ac506f", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c10/tight-rank.md", "revision": "31b64fe0dadd119feb9052627ad9bfbfb6ac506f", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T16:32:54.442222+00:00"
+}

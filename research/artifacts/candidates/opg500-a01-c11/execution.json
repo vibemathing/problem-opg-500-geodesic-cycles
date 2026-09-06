@@ -1,0 +1,132 @@
+{
+  "verdict": "candidate_only",
+  "execution_role": "candidate_generation_sandbox",
+  "run_at": "2026-09-06T16:27:22.442637+00:00",
+  "python_version": "3.13.5",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-S",
+        "emit.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.035890197999947304,
+      "limits": {
+        "wall_seconds": 15,
+        "cpu_seconds": 10,
+        "memory_bytes": 268435456,
+        "max_output_bytes": 1048576
+      },
+      "stdout_sha256": "87d02a1355dd4dd42bd291ccd0cfa490c3a1c3d66efb3ceeb5abbb157611311a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": {
+        "clauses": 76,
+        "conflict_leaves": 8,
+        "execution_role": "candidate_generation_sandbox",
+        "generator_sha256": "5e4c4671456934ae9edf2e2a555cd54c40d717fc6fc803b181c11e0fb67cd580",
+        "input_sha256": "b7f6bb1aaa032313232be769f83f0a8e3862b852095e868f25ff82506b2d73be",
+        "kernel_output": null,
+        "lean_execution": "not_run",
+        "lean_source_bytes": 16153,
+        "lean_source_sha256": "cfcfe5cf0badf467ecbf1a2c8c3498307b2c4a2564fd4ffafd7e7eaa36133b94",
+        "mutations": [
+          {
+            "mutation": "wrong_unit",
+            "reason": "Invalid unit step",
+            "rejected": true
+          },
+          {
+            "mutation": "false_conflict",
+            "reason": "Clause is not a conflict",
+            "rejected": true
+          },
+          {
+            "mutation": "missing_branch",
+            "reason": "Incomplete split coverage",
+            "rejected": true
+          },
+          {
+            "mutation": "changed_clause",
+            "reason": "Different frozen clauses",
+            "rejected": true
+          }
+        ],
+        "proof_nodes": 15,
+        "python_version": "3.13.5",
+        "trusted_verifier_receipt": null,
+        "unit_derivations": 89,
+        "verdict": "candidate_only"
+      }
+    },
+    {
+      "command": [
+        "python",
+        "-S",
+        "audit_terms.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06722394199999826,
+      "limits": {
+        "wall_seconds": 15,
+        "cpu_seconds": 10,
+        "memory_bytes": 268435456,
+        "max_output_bytes": 1048576
+      },
+      "stdout_sha256": "4bd2752208e69b6343af382933350d10403848f90e1df0b3e7fdc28d0d031e4e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output": {
+        "execution_role": "candidate_generation_sandbox",
+        "lean_execution": "not_run",
+        "lean_text_sha256": "cfcfe5cf0badf467ecbf1a2c8c3498307b2c4a2564fd4ffafd7e7eaa36133b94",
+        "method": "small-propositional-fragment-checker-reading-emitted-text",
+        "mutations": [
+          {
+            "mutation": "changed_premise",
+            "reason": "Type mismatch",
+            "rejected": true
+          },
+          {
+            "mutation": "unbound_hypothesis",
+            "reason": "Unbound hypothesis: absent66",
+            "rejected": true
+          },
+          {
+            "mutation": "wrong_negation",
+            "reason": "Application of a non-function",
+            "rejected": true
+          }
+        ],
+        "premises": 76,
+        "python_version": "3.13.5",
+        "rules": {
+          "application": 142,
+          "classical_em": 7,
+          "false_elim": 118,
+          "hypothesis": 507,
+          "lambda": 282,
+          "let": 89,
+          "or_elim": 141
+        },
+        "scope": "Checks only the explicit propositional fragment, not Lean parsing/elaboration, the graph metric bridges or root admission.",
+        "source_sha256": "55103055d01dcc12a3b69e8c5f5e26057968bfa6627e48d5b9f86edf3088d364",
+        "trusted_verifier_receipt": null,
+        "verdict": "candidate_only"
+      }
+    }
+  ],
+  "runtime_probe": {
+    "lean": {
+      "found": false
+    },
+    "lake": {
+      "found": false
+    },
+    "elan": {
+      "found": false
+    }
+  },
+  "lean_execution": "not_run",
+  "trusted_verifier_receipt": null,
+  "scope": "Exporter and small proof-fragment checker only. No Lean elaboration, graph formalization, axiom report, or root admission."
+}
