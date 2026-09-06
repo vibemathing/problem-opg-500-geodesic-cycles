@@ -95,7 +95,7 @@ weak system Rw>=0 would not have this conclusion, since w=0 is feasible.
 
 For our matrices R in {-1,0,1}^{r-by-m}, an infeasible branch has a
 certificate mu satisfying
-  mu in Z_≥0^r,  R^T mu=0,  sum_i mu_i>0,
+  mu in Z_{≥0}^r,  R^T mu=0,  sum_i mu_i>0,
 with at most m+1 nonzero entries and every entry at most (m+1)!.
 
 Proof. Normalize a certificate from (D) so that its coordinates sum to 1.
