@@ -1,0 +1,206 @@
+# C10: all-ties obstruction and witness extraction
+
+Verdict: candidate_only. Target: obligation:opg500-root.
+Problem: problem:opg-500-geodesic-cycles.
+Attempt: attempt:web-20260906-opg500-a01.
+Route: route:geodesic-linear-encoding-v1.
+Graph: graph:opg500-initial-v1.
+Base: 271f61c9074c5e62e239ba1df0a7c715825b9ee1.
+ProblemContract SHA-256: 51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449.
+
+## Improvement over C09
+
+This proof never perturbs weights and never assumes unique shortest paths.
+It applies to the original arbitrary positive real vector, including all
+ties. It also gives a terminating method to extract a bad geodesic cycle
+from each input vector. C09's 76-clause certificate is not reused as a
+certificate for this different necessary abstraction.
+
+Graph H has core B={0,1,2,3}=K4 and independent vertices y_i=7-i,
+N(y_i)=B minus {i}. Edge order is
+01 02 03 04 05 06 12 13 14 15 17 23 24 26 27 35 36 37.
+Deleting at most two vertices leaves at least two adjacent core vertices,
+and every surviving apex retains a core neighbor. Hence H is 3-connected.
+The only peripheral cycles are the twelve triangles {y_i,a,b}, a,b in
+B minus {i}: deleting one leaves an adjacent core pair joined to all
+remaining apices. The four core triangles isolate one apex on deletion.
+All longer cycles have a core chord: with two core vertices they are
+alternating four-cycles, and with at least three a core pair is
+nonconsecutive. Thus every longer cycle is nonperipheral.
+
+These are the SAME labels and frozen vertex-geodesic definition as C09.
+The older chat's p_i=4+i labeling is related by p_i -> 7-i; numerical
+edge vectors must not be moved between these labels without this map.
+
+## T1. Tight edges preserve the original distance
+
+Fix arbitrary positive real weights w and write d for graph distance.
+Let T be the spanning subgraph of edges uv with w_uv=d(u,v).
+Every edge of a shortest path is tight: replacing a nontight edge by a
+shorter endpoint path gives a shorter walk, and repeated-vertex deletion
+cannot increase length. Positive weights and finite simple-path families
+guarantee an attained shortest path between every pair.
+Thus every pair has a shortest H-path contained in T. Inclusion gives
+both inequalities d_T=d_H; in particular T is connected.
+
+## T2. Every nontight edge has a geodesic complementary-path cycle
+
+For nontight e=uv choose ANY shortest u-v path P. Since L(P)<w_e, P does
+not use e; it is simple and its edges belong to T. The cycle e union P
+is vertex-geodesic. Every pair of cycle vertices belongs to P, and the
+P-subpath between them is globally shortest and is one of the cycle arcs.
+This argument allows arbitrarily many tied shortest endpoint paths.
+The argument explicitly checks vertices, as required by the contract.
+In the usual finite metric realization it also extends to interior edge
+points by replacing external excursions with shortest cycle arcs; no
+such extension is needed for the root proof here.
+
+## T3. Geodesic cycles generate the binary cycle space
+
+We recall a proof to expose the exact dependence. A non-geodesic cycle C
+has a simple path shorter than both endpoint arcs. Split it at consecutive
+visits to C. If each segment were at least the intrinsic C-distance of
+its endpoints, the triangle inequality in C would contradict the strict
+shortcut. A segment Q is therefore shorter than both corresponding arcs
+A,B and has internal vertices outside C. The cycles A union Q and B
+union Q are strictly shorter than C and sum to C over F2.
+Induction over the finite ordered set of cycle lengths proves generation.
+Apply this within T; by T1 every T-geodesic cycle is H-geodesic.
+
+The basic cycle-space dimension used below is m(T)-8+1 for connected T.
+A spanning-tree fundamental cycle basis proves it: distinct nontree edges
+have distinct pivot positions; cancellation of all such edges leaves an
+even edge subset of a tree, which is empty by leaf deletion.
+
+## T4. The necessary core/link structure under the root hypothesis
+
+Suppose every H-geodesic cycle is peripheral. Put F=T[B], f=|E(F)|,
+and N_i=N_T(y_i), a subset of B minus {i}.
+
+F is triangle-free. Three tight core edges form a geodesic core triangle,
+which is nonperipheral.
+
+N_i dominates F-i. For j!=i, if y_i j is tight, j is in N_i. Otherwise
+T2 makes y_i j plus a shortest path a geodesic cycle. By the hypothesis
+it is a peripheral triangle {y_i,j,k}; its other edges are tight, so
+k is in N_i and jk is in F. These alternatives prove domination.
+This also proves N_i nonempty and meeting every component of F-i.
+
+Let n_i=|N_i|, e_i=|E(F[N_i])|, c_i=cc(F[N_i]). A triangle-free graph on
+at most three vertices is a forest, so e_i=n_i-c_i. The triangles in T
+are exactly those indexed by the edges of the four F[N_i]; no triangle
+lies wholly in F, and no triangle contains two apices. Thus
+  beta(T)=f+sum_i n_i-7,
+  triangle_count(T)=sum_i e_i.
+T3 and the root hypothesis require the T-cycle space to be generated by
+some of these triangles. No independence of triangles is assumed; the
+number of generators bounds dimension, giving
+  f+sum_i c_i-7 <= 0.                                      (R)
+
+## T5. All core/link possibilities contradict (R)
+
+A triangle-free four-vertex F is a forest or C4. In the C4 case f=4 and
+all c_i>=1, so the left side of (R) is at least one.
+
+For a forest let c=cc(F)=4-f and d_i=deg_F(i). The component count after
+deleting i is c+d_i-1, even when i is isolated. Domination forces N_i
+to meet every one of these components, hence c_i>=c+d_i-1.
+Since sum_i d_i=2f,
+  f+sum_i c_i-7 >= 3f+4c-11 = 5-f >= 2.
+This contradicts (R) in both cases. All real positive weights have been
+covered before any finite numerical sample is considered.
+
+## T6. Constructive extraction, not just contradiction
+
+Given the actual vector w, calculate d,T,F and N_i, without perturbation.
+
+A. If F has a triangle, return that core triangle. Its three tight edges
+certify geodesicity, while deleting it isolates an apex.
+
+B. Otherwise, if N_i fails to dominate j in F-i, the edge y_i j is
+nontight. Return its union with a shortest endpoint path from T2.
+It cannot be a triangle: a triangular complementary path would supply
+a neighbor k in N_i joined to j in F, contrary to the failed domination.
+Its length in vertices is at least four, so it is chorded and nonperipheral.
+
+C. Otherwise the hypotheses of T5 hold. Let W be the binary span of ALL
+triangles of T. The bound beta(T)>triangle_count(T)>=dim(W) shows there
+is a simple cycle of T outside W. Take one of minimum weighted length
+among that finite nonempty family, breaking remaining ties by vertex list.
+It is geodesic: a failure would, by T3, split it into two shorter cycles,
+at least one outside W, contradicting minimality. It is not a triangle
+because every T-triangle is in W. It is H-geodesic by T1, and nonperipheral
+because it is a longer H-cycle.
+
+Equivalently, start with a fundamental cycle outside W and keep a shorter
+child outside W. Each step strictly decreases cycle length within the
+finite set of T-cycles (at most the 239 H-cycles). This terminates even
+when other paths or cycles tie. The algorithm need not distinguish real
+numbers effectively for arbitrary representations: the all-real proof
+is an existence/extraction argument; the executable version accepts exact
+rational inputs only.
+
+## Finite certificate and actual candidate checks
+
+The checker considers all 64 core edge masks. Twenty-three are excluded
+by an explicit tight core triangle. For each of the other 41 masks, it
+enumerates every nonempty apex neighbor subset that dominates F-i.
+There are 5913 combined choices. Each row records the core mask, the four
+neighbor masks and the positive rank gap. Gap counts are
+1:768; 2:2752; 3:2019; 4:366; 5:8.
+Connectedness of T need not be enforced in this auxiliary enumeration:
+showing a positive gap for this larger family covers every connected T
+that the metric supplies. The dimension formula itself is only used
+for connected T in the mathematical implication.
+
+The rational extractor was run on 52 deterministic vectors: unit, core3/
+spokes1, binary powers, 32 seeded positive integer vectors, 16 seeded
+positive rational vectors, and the unit vector scaled by 7/13.
+All three extraction branches occur. Each output supplies the original
+18-vector, all-pairs distances and attaining simple paths, the bad cycle,
+its chords/deletion components and every cycle-pair arc/distance comparison.
+Distance correctness is also checked by anchored edge-Lipschitz bounds
+and path attainment, not just by trusting the shortest-path algorithm.
+These samples attack the implementation only; T1--T6 prove the universal
+candidate claim and are not inferred from sample success.
+
+Run from this directory: python -S check.py. It emits patterns.json,
+witness-audits.json and replay-report.json. Their exact hashes and the
+bounded generator-side execution are retained in execution.json.
+A compact per-pattern-type summary and all 52 vector/cycle outputs are
+in summary.json. Full generated data are reproducible and included in
+the local downloadable candidate bundle, not promoted to verifier receipts.
+
+## Definition-side correction found during self-review
+
+An earlier version of T2 incorrectly said the complementary-path claim
+was false for interior edge points. That sentence was not a proof premise
+and is removed. For a finite graph realized as positive-length intervals,
+any path between points of C can leave C only through graph vertices.
+Replace every outside excursion by a no-longer cycle arc, using vertex
+geodesicity. The resulting C-walk is no longer, proving the interior-point
+version as well. The converse follows by restricting to vertices. This
+finite lifting argument makes no assertion about infinite topological
+cycles or metrics without this finite realization.
+
+## Dependencies, limits and next slice
+
+C09 root-counterexample.md at the frozen base supplies the graph framing
+and an alternate perturbation proof. T3 reuses its M1 argument, not M2/M3.
+The primary finite theorem is Georgakopoulos--Spruessel, arXiv:0911.3999v1,
+Theorem 3.1; source-faithfulness discussion is in the C09 source note.
+The common use of T3 means these proofs are NOT separate trust domains.
+
+T1, T2, the rank bound and the constructive minimum-outside-span theorem
+still need formal proof replay and graph/definition faithfulness review.
+The local environment has no Lean/lake/elan executable; no compiler,
+registered kernel, EvidenceLink or admission operation is claimed.
+
+best_candidate: C10 all-ties proof and extraction, with C09 retained.
+best_verified_candidate: none.
+best_verified_result: none.
+open_obligations: obligation:opg500-root;
+obligation:opg500-finite-linear-characterization.
+next_action: isolate the small finite core/rank theorem and the
+minimum-outside-span descent as explicit formal proof slices, preserving
+the graph-distance bridge as a separate review obligation.

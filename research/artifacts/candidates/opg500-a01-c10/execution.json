@@ -1,0 +1,75 @@
+{
+  "verdict": "candidate_only",
+  "execution_role": "candidate_generation_sandbox",
+  "run_at": "2026-09-06T15:41:59.356052+00:00",
+  "command": [
+    "python",
+    "-S",
+    "check.py"
+  ],
+  "wall_seconds": 35,
+  "cpu_seconds": 30,
+  "memory_bytes": 268435456,
+  "output_limit_bytes": 1048576,
+  "exit_code": 0,
+  "stdout_sha256": "61b3adff6ec18e56d57e321eac8943ade506c6e40f65a6c36eb20631e9202792",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "trusted_verifier_receipt": null,
+  "output": {
+    "all_sample_witnesses_nonperipheral_geodesic": true,
+    "core_patterns": 64,
+    "dominating_spoke_patterns": 5913,
+    "elapsed_seconds": 0.12022796899987043,
+    "exact_weight_samples": 52,
+    "execution_role": "candidate_generation_sandbox",
+    "extractor_cases": {
+      "minimum_outside_triangle_span": 10,
+      "nontight_edge_cycle": 23,
+      "tight_core_triangle": 19
+    },
+    "gap_histogram": {
+      "1": 768,
+      "2": 2752,
+      "3": 2019,
+      "4": 366,
+      "5": 8
+    },
+    "patterns_sha256": "0ebf0429ca187e789044e3aa1fcfa66593473842932a4cdaa8c1c445d3ecad5d",
+    "python_version": "3.13.5",
+    "scope": "Finite combinatorial certificate and rational sample extraction only; all-real proof remains a separate candidate.",
+    "source_sha256": "71edbf5e492bda8d46008777351315d53106c8cab61288c88be4ba923883e7e3",
+    "triangle_free_patterns": 41,
+    "trusted_verifier_receipt": null,
+    "verdict": "candidate_only",
+    "witness_audits_sha256": "78a8390e76fc411e10323ec3a8bbc102166fd832e43dbacad88a68daac29f2b3"
+  },
+  "separate_check": {
+    "run_at": "2026-09-06T15:52:25.505235+00:00",
+    "command": [
+      "python",
+      "-S",
+      "verify.py"
+    ],
+    "wall_seconds": 25,
+    "cpu_seconds": 20,
+    "memory_bytes": 268435456,
+    "output_limit_bytes": 1048576,
+    "exit_code": 0,
+    "stdout_sha256": "e41882fbc29aae5246c284444ab4a57bc7c7e55542dea5084a97fa88cd7c5b09",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "output": {
+      "all_distance_and_bad_cycle_certificates_valid": true,
+      "checker_sha256": "59a96e2274a9c1e03f3ddec3f8c0c68001665a3a718acdb9fa5c5c023840b008",
+      "exact_weight_samples": 52,
+      "execution_role": "candidate_generation_sandbox",
+      "method": "Cartesian-mask coverage plus exact distance/path certificate replay; no producer import",
+      "patterns": 5913,
+      "patterns_sha256": "0ebf0429ca187e789044e3aa1fcfa66593473842932a4cdaa8c1c445d3ecad5d",
+      "python_version": "3.13.5",
+      "triangle_free_cases": 41,
+      "trusted_verifier_receipt": null,
+      "verdict": "candidate_only",
+      "witness_audits_sha256": "78a8390e76fc411e10323ec3a8bbc102166fd832e43dbacad88a68daac29f2b3"
+    }
+  }
+}
