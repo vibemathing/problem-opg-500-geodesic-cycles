@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "d697830e1f72a9743960a7c6db120ed1fff7e878",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-finite-linear-characterization",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c05-branch-certificates",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": 8,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/8"
+  },
+  "objective": "C05: derive finite strict-witness branches, exact sparse integer infeasibility certificates, and separate complete Boolean coverage from individual branch checks.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-a01-c05-branch-certificates",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c05-branch-certificates.md",
+      "sha256": "b5c6fa6947a4ad707bc8fe2dd62924fb410f102c6ab837519e83d83ace51f883"
+    },
+    {
+      "candidate_id": "candidate:opg500-a01-c05-certificate-fixtures",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c05-fixtures.json",
+      "sha256": "130950f92d576e75fcc9f416728bee2974a519084b629f1c13cb67381ec21996"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg500-c05-strict-branch-equivalence",
+      "status": "candidate",
+      "text": "Avoiding every cycle in a frozen finite family is equivalent to a finite disjunction of strict homogeneous systems choosing one external shortcut per cycle."
+    },
+    {
+      "claim_id": "claim:opg500-c05-sparse-dual-certificates",
+      "status": "candidate",
+      "text": "Each infeasible {-1,0,1} branch matrix has a nonnegative nonzero integer null combination using at most m+1 rows, with multipliers bounded by (m+1)!."
+    },
+    {
+      "claim_id": "claim:opg500-c05-coverage-boundary",
+      "status": "candidate",
+      "text": "Individual infeasibility certificates eliminate only their frozen branches or certified extensions; complete Boolean coverage and complete cycle/path tables are separately required."
+    }
+  ],
+  "assumptions": [
+    "Finite simple undirected G with m>=1 edges and positive real lengths.",
+    "A fixed finite cycle family and complete external C-path choice tables.",
+    "Rows use both strict arc-minus-shortcut gaps and all positive coordinate inequalities.",
+    "Only finite ordered-field linear algebra and the finite theorem of alternatives are used."
+  ],
+  "risks": [
+    "The fixture expectations are hand-derived and unexecuted, not solver output.",
+    "The abstract infeasible matrix is not a graph counterexample.",
+    "One branch certificate does not prove whole-formula infeasibility.",
+    "Path/cycle enumeration completeness and faithful graph-to-matrix binding remain verification obligations."
+  ],
+  "open_obligations": [
+    "obligation:opg500-finite-linear-characterization",
+    "obligation:opg500-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "d697830e1f72a9743960a7c6db120ed1fff7e878",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "d697830e1f72a9743960a7c6db120ed1fff7e878",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c01-linear.md",
+      "revision": "d697830e1f72a9743960a7c6db120ed1fff7e878",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c02-excursions.md",
+      "revision": "d697830e1f72a9743960a7c6db120ed1fff7e878",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c04-integer-cells.md",
+      "revision": "d697830e1f72a9743960a7c6db120ed1fff7e878",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/source-notes/opg500-a01-c04-source.md",
+      "revision": "d697830e1f72a9743960a7c6db120ed1fff7e878",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:26:39.245890Z"
+}
