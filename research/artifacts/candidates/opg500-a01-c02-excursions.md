@@ -150,7 +150,9 @@ to assume every individual C-edge is shortest in G.
 
 For each sorted distinct pair u,v of C:
 - include edge uv only when uv is in E(G)\E(C);
-- enumerate sorted, distinct outside-vertex sequences of length <=m;
+- enumerate ALL ordered sequences of distinct outside vertices of length
+  <=m, in deterministic lexicographic output order; do not require the
+  vertices within a sequence to be increasing;
 - retain exactly sequences u,...,v whose successive edges exist;
 - attach the two actual u-v C-arcs and their edge incidence vectors.
 
