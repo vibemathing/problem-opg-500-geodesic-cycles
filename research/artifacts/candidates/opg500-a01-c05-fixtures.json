@@ -1,0 +1,259 @@
+{
+  "format": "candidate-fixtures-opg500-c05-v1",
+  "verdict": "candidate_only",
+  "execution_status": "not_executed",
+  "target_obligation": "obligation:opg500-finite-linear-characterization",
+  "cases": [
+    {
+      "case_id": "abstract-strict-dual",
+      "scope": "abstract matrix only; no graph realization asserted",
+      "relation": "row dot w > 0",
+      "rows": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "dual_integer_multipliers": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "expected_by_hand": "nonnegative nonzero multiplier vector has zero weighted row sum; strict system has no solution",
+      "weak_mutation_witness": [
+        1,
+        1
+      ]
+    },
+    {
+      "case_id": "k4-nonperipheral-cycle-avoidance",
+      "vertices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "edge_table": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "integer_lengths": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cycle_choices": [
+        {
+          "cycle": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "shortcut": [
+            0,
+            2
+          ],
+          "arc_a": [
+            0,
+            1,
+            2
+          ],
+          "arc_b": [
+            0,
+            3,
+            2
+          ],
+          "gap_rows": [
+            [
+              1,
+              -1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              -1,
+              1,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "cycle": [
+            0,
+            1,
+            3,
+            2
+          ],
+          "shortcut": [
+            0,
+            3
+          ],
+          "arc_a": [
+            0,
+            1,
+            3
+          ],
+          "arc_b": [
+            0,
+            2,
+            3
+          ],
+          "gap_rows": [
+            [
+              1,
+              0,
+              -1,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              -1,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "cycle": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "shortcut": [
+            0,
+            1
+          ],
+          "arc_a": [
+            0,
+            2,
+            1
+          ],
+          "arc_b": [
+            0,
+            3,
+            1
+          ],
+          "gap_rows": [
+            [
+              -1,
+              1,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              -1,
+              0,
+              1,
+              0,
+              1,
+              0
+            ]
+          ]
+        }
+      ],
+      "positive_coordinate_rows": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "relation": "row dot w > 0",
+      "expected_by_hand": "all twelve row values equal 1; chosen shortcuts eliminate the three nonperipheral four-cycles of K4"
+    }
+  ]
+}
