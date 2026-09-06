@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "c2c0d1bd84bf02dd569e2508a556c60f43ea40f6",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-finite-linear-characterization",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c04-integer-cells",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": 7,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/7"
+  },
+  "objective": "C04: preserve exact simple-path comparison signs, including ties, with bounded positive integer representatives via strict normalization and active-row determinant bounds.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-a01-c04-integer-cells",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c04-integer-cells.md",
+      "sha256": "eeb4c1ccb13f8b6f9043126b8e802c48c4d3063a090e6737a087374570a33222"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg500-c04-sign-cell-integers",
+      "text": "Every realized sign pattern of a finite family of {-1,0,1} homogeneous forms on positive m-vectors has an integer representative with all coordinates between 1 and m!, preserving zero signs.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c04-cycle-status-preservation",
+      "text": "For a fixed m-edge graph, some integer assignment in {1,...,m!}^E preserves all simple-path comparisons and hence the geodesic status of every cycle simultaneously.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple undirected G with m>=1 edges and positive real edge lengths.",
+    "The comparison family is finite and has coefficients in {-1,0,1}; path incidence bounds rely on simple paths.",
+    "Only finite graph arguments and finite linear algebra over an ordered field are used.",
+    "No assertion of preserving numerical distances or ratios is made."
+  ],
+  "risks": [
+    "No solver or proof-kernel replay has run; the generic sign-cell and graph application remain candidates.",
+    "The active-rank argument must preserve all inactive inequalities and all equality rows.",
+    "The finite integer box is generally enormous and gives no bound on the size of G.",
+    "A fixed-graph finite encoding does not close the root's all-graphs existence claim."
+  ],
+  "open_obligations": [
+    "obligation:opg500-finite-linear-characterization",
+    "obligation:opg500-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "c2c0d1bd84bf02dd569e2508a556c60f43ea40f6",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "c2c0d1bd84bf02dd569e2508a556c60f43ea40f6",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c01-linear.md",
+      "revision": "c2c0d1bd84bf02dd569e2508a556c60f43ea40f6",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c02-excursions.md",
+      "revision": "c2c0d1bd84bf02dd569e2508a556c60f43ea40f6",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/source-notes/opg500-a01-c04-source.md",
+      "revision": "3682a3331147f9ef0960784c5e9acc3c29f1ef17",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:14:46.136372Z"
+}
