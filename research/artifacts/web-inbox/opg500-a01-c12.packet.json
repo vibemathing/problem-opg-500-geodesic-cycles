@@ -13,7 +13,7 @@
   "graph_id": "graph:opg500-initial-v1",
   "obligation_id": "obligation:opg500-root",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg500-a01-c12-finite-descent", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg500-a01-c12-finite-descent", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": 15, "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/15"},
   "objective": "C12: remove the supplied-minimum hypothesis by explicit finite-table restricted minimum and strict descent, with complete graph realization and span closure retained.",
   "candidate_artifacts": [
     {"candidate_id": "candidate:opg500-a01-c12-finite-descent", "kind": "formalization", "locator": "research/artifacts/candidates/opg500-a01-c12/FiniteDescent.lean", "sha256": "964a69d8cbfb6c59080730be907aa137617ec3077961c69697f0766d861b58a3"},
