@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "fe19caf088da56204e3f6cf30b5078a276561dd3",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-finite-linear-characterization",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c07-graph-table",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": 10,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/10"
+  },
+  "objective": "C07: supply a complete graph-to-finite-table construction and typed Boolean compiler faithfulness proof, with explicit arc indices, incidence cancellation and a K5 path-order mutation fixture.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-a01-c07-graph-table",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c07-graph-table.md",
+      "sha256": "609da513c30172c0b383f8be50da68bfc374e745ca19e53e5e710501adb0c106"
+    },
+    {
+      "candidate_id": "candidate:opg500-a01-c07-path-order-fixture",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c07-fixture.json",
+      "sha256": "d1297f94dc6d6c160e6c0274117cbb806ff4e7f115741f3ad6042af5c59ac6d7"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg500-c07-complete-path-table",
+      "status": "candidate",
+      "text": "The full distinct-vertex sequence enumeration and bounded-depth DFS are sound and complete for simple paths, and constructive cyclic indices supply both actual cycle arcs."
+    },
+    {
+      "claim_id": "claim:opg500-c07-compiler-faithfulness",
+      "status": "candidate",
+      "text": "Path incidence sums, positive-length walk reduction and finite Boolean structural semantics map the graph definition exactly to the inclusive weak linear formula and strict common-shortcut negation."
+    },
+    {
+      "claim_id": "claim:opg500-c07-order-filter-mutation",
+      "status": "candidate",
+      "text": "An explicit positive-integer weighted K5 cycle is falsely accepted by increasing-only intermediate path enumeration; the correct shortcut uses the sequence 0,3,2,4."
+    }
+  ],
+  "assumptions": [
+    "Finite simple undirected graph with a fixed bijective vertex labelling and duplicate-free unordered edge table.",
+    "A simple cycle with all consecutive edges and the closing edge present.",
+    "Positive real edge lengths; all distinct cycle-vertex pairs and all simple pair paths are included.",
+    "The construction and arithmetic use finite-graph-basic and real-ordered-field."
+  ],
+  "risks": [
+    "No graph enumerator, AST consumer, Lean compiler or solver was executed.",
+    "Partial enumeration under a resource cap is incomplete, not a complete path table.",
+    "Direction, closing-edge, shared-edge and dimension conventions must be checked before applying the order slice.",
+    "The candidate graph correspondence does not replace an authorized statement-faithfulness receipt."
+  ],
+  "open_obligations": [
+    "obligation:opg500-finite-linear-characterization",
+    "obligation:opg500-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "fe19caf088da56204e3f6cf30b5078a276561dd3",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "fe19caf088da56204e3f6cf30b5078a276561dd3",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c01-linear.md",
+      "revision": "fe19caf088da56204e3f6cf30b5078a276561dd3",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c02-excursions.md",
+      "revision": "fe19caf088da56204e3f6cf30b5078a276561dd3",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c06-order-slice.lean",
+      "revision": "fe19caf088da56204e3f6cf30b5078a276561dd3",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c06-faithfulness-map.md",
+      "revision": "fe19caf088da56204e3f6cf30b5078a276561dd3",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:56:55.865291Z"
+}
