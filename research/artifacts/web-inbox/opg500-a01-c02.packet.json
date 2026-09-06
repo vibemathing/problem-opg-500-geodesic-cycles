@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "188d5cc158fae50d4c2caa7f05c55b1c485f7d2e",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-finite-linear-characterization",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c02-excursions",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "objective": "C02: prove the external C-path comparison reduction, localize strict shortcut witnesses and audit completeness of the smaller enumeration.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-a01-c02-excursions",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c02-excursions.md",
+      "sha256": "7a5b96ce0cc06b777e2ae1bc3280866d1b52895f00ccd0ea0fe3c8d0ce4223f6"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg500-c02-external-paths",
+      "text": "Geodesicity is equivalent to every simple path with distinct endpoints on C and internal vertices outside C being at least the intrinsic C-distance; single C-edges may be omitted.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c02-localized-shortcut",
+      "text": "Every strict simple-path shortcut yields a strict external C-path shortcut by splitting at consecutive cycle vertices; the localized endpoints may change.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c02-finite-reduction",
+      "text": "The reduced comparison family is finite with a per-pair permutation bound depending only on vertices outside C; chords, adjacent endpoint pairs and the empty-family case are handled.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple undirected G; C is a simple cycle.",
+    "All edge lengths are positive real numbers.",
+    "Pairs are distinct cycle vertices; the diagonal is discharged by the empty walk.",
+    "Allowed mathematical background: finite-graph-basic and real-ordered-field."
+  ],
+  "risks": [
+    "C01 is a candidate dependency, not admitted evidence.",
+    "No graph solver or kernel replay has run.",
+    "Path witnesses must retain their own endpoint pair; restricting to chords or nonadjacent pairs is unsound.",
+    "Root existence remains open."
+  ],
+  "open_obligations": [
+    "obligation:opg500-finite-linear-characterization",
+    "obligation:opg500-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "188d5cc158fae50d4c2caa7f05c55b1c485f7d2e",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "188d5cc158fae50d4c2caa7f05c55b1c485f7d2e",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c01-linear.md",
+      "revision": "188d5cc158fae50d4c2caa7f05c55b1c485f7d2e",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T07:27:49.171224Z"
+}
