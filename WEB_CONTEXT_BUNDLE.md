@@ -208,72 +208,102 @@ This file is generated from repository truth and bounded for the web channel. It
     "acceptance": {
       "policy": "solution-admission-v1"
     },
-    "aliases": [],
+    "aliases": [
+      "Open Problem Garden OPG-500"
+    ],
     "allowed_axioms": [
-      "none"
+      "finite-graph-basic",
+      "real-ordered-field"
     ],
     "assumptions": [
-      "This record must never be treated as an active research problem."
+      "All graphs and digraphs are finite and simple unless the statement explicitly says otherwise."
     ],
     "constraints": {
       "allowed_adapters": [
-        "template-validation-v1"
+        "bounded-graph-enumerator-v1",
+        "exact-linear-inequality-v1",
+        "lean-obligation-v1"
       ],
       "allowed_methods": [
-        "discovery"
+        "discovery",
+        "derivation",
+        "computation",
+        "proof",
+        "formalization"
       ],
-      "max_attempts": 1,
+      "max_attempts": 20,
       "runtime": {
-        "max_output_bytes": 65536,
-        "max_retries": 1,
-        "max_transitions": 10,
-        "timeout_seconds": 60
+        "max_output_bytes": 5242880,
+        "max_retries": 3,
+        "max_transitions": 300,
+        "timeout_seconds": 1800
       }
     },
-    "created_at": "2026-09-06T00:00:00Z",
+    "created_at": "2026-09-06T03:30:00Z",
     "definitions": [
       {
-        "definition": "A non-admitted draft record used only to validate the physical public repository template.",
-        "term": "template placeholder"
+        "definition": "A cycle C such that for each pair of vertices on C, one of the two C-arcs between them is an ℓ-shortest path in G.",
+        "term": "ℓ-geodesic cycle"
+      },
+      {
+        "definition": "An induced non-separating cycle; deleting its vertices leaves the remaining graph connected or empty.",
+        "term": "peripheral cycle"
       }
     ],
     "domain": {
-      "description": "Template-only placeholder domain; not a mathematical research question.",
+      "description": "Finite simple 3-connected graphs equipped with positive real edge lengths.",
       "objects": [
-        "template-placeholder"
+        "3-connected graph",
+        "positive edge-length assignment",
+        "geodesic cycle",
+        "peripheral cycle"
       ]
     },
-    "lifecycle": "draft",
+    "lifecycle": "active",
     "msc": [
-      "00A00"
+      "05C38"
     ],
-    "problem_id": "problem:template-placeholder",
+    "problem_id": "problem:opg-500-geodesic-cycles",
     "quantifiers": [
       {
-        "domain": "a reviewed public canonical ProblemContract supplied by the repository builder",
-        "kind": "find",
+        "domain": "finite simple 3-connected graphs",
+        "kind": "forall",
         "variables": [
-          "replacement_problem"
+          "G"
+        ]
+      },
+      {
+        "domain": "positive real edge-length assignments ℓ:E(G)→R_{>0}",
+        "kind": "exists",
+        "variables": [
+          "ℓ"
+        ]
+      },
+      {
+        "domain": "ℓ-geodesic cycles of G",
+        "kind": "forall",
+        "variables": [
+          "C"
         ]
       }
     ],
     "schema_version": "1.0.0",
     "sources": [
       {
-        "retrieved_at": "2026-09-06T00:00:00Z",
-        "source": "Vibe Mathing public Web Harness",
-        "source_record_id": "public-template-placeholder-v1",
-        "url": "https://github.com/vibemathing/vibe-mathing-problem-public-template"
+        "retrieved_at": "2026-09-02T00:06:43Z",
+        "source": "UnsolvedMath",
+        "source_record_id": "unsolvedmath-opg-500-6a469c8c697d",
+        "url": "https://www.unsolvedmath.com/problems/OPG-500"
       }
     ],
     "statement": {
       "language": "en",
-      "text": "This is a non-research placeholder. Replace it with exactly one reviewed public ProblemContract before creating a public problem repository.",
+      "text": "For every finite 3-connected graph G, does there exist an assignment of positive real lengths ℓ:E(G)→R_{>0} such that every ℓ-geodesic cycle is peripheral?",
       "version": 1
     },
-    "title": "Vibe Mathing public problem repository template placeholder",
-    "updated_at": "2026-09-06T00:00:00Z"
+    "title": "Geodesic cycles and Tutte's theorem",
+    "updated_at": "2026-09-06T03:30:00Z"
   },
-  "problem_contract_sha256": "e64cd03254e03dd661eade23243c3c21793fc2d8bffa2d33c172cf8ed2e7f940"
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449"
 }
 ```
