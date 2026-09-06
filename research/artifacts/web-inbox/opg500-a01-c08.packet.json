@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "05024fd4721b7f3e88dc575b92f5796b154e2b3c",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-root",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c08-root-search",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "objective": "C08: compile the simultaneous shared-length root formula and execute bounded exact searches with complete cycle/path cross-checks on nine named graphs.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-a01-c08-compiler",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-c08/root_search.py",
+      "sha256": "f7e22b2abd5e3cf6d07ee04906ca4cd2a5ccf99a5c918bcaa8a0923f3a7acad8"
+    },
+    {
+      "candidate_id": "candidate:opg500-a01-c08-audit",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-c08/exact_audit.py",
+      "sha256": "b6b0793fb0de44022ec9162e5b90f923924d06a8fd49efcdc4ee4a99197c20bb"
+    },
+    {
+      "candidate_id": "candidate:opg500-a01-c08-cases",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-c08/cases.json",
+      "sha256": "06f8925aee4b05b4a5cd234b6707907f1932758bffe6d0e2ab7b5ae8aaf2dc2f"
+    },
+    {
+      "candidate_id": "candidate:opg500-a01-c08-root-formula",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg500-a01-c08/root.md",
+      "sha256": "ead1a8ea03cd980a8c7b7b2ca362f8ff66ff81e2d538f1e3200edf132d24b90c"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg500-c08-shared-root-formula",
+      "text": "All nonperipheral cycles are excluded by finite strict shortcut clauses sharing one positive edge-length vector.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c08-bounded-integer-witness",
+      "text": "Each feasible strict root branch has a positive integer representative with every coordinate at most m!.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c08-nine-witnesses",
+      "text": "Exact integer candidate computations found and audited global witnesses for the nine listed graphs; no real-domain UNSAT is inferred from bounded failures.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple undirected graph, with 3-connectivity checked for each test graph.",
+    "Positive real edge-length root variables; exact integer assignments in the executed cases.",
+    "Peripheral means induced and vertex deletion leaves connected or empty graph.",
+    "Finite-graph-basic and real-ordered-field."
+  ],
+  "risks": [
+    "Current local candidate-generation sandbox execution is not registered verification or admission.",
+    "The universal root remains open; nine graph witnesses do not imply all-graph existence.",
+    "C06 Lean source remains uncompiled; Lean/Elan/Lake were not found.",
+    "General graph-to-formula faithfulness still needs a trusted replay."
+  ],
+  "open_obligations": [
+    "obligation:opg500-root",
+    "obligation:opg500-finite-linear-characterization"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "05024fd4721b7f3e88dc575b92f5796b154e2b3c",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "05024fd4721b7f3e88dc575b92f5796b154e2b3c",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c01-linear.md",
+      "revision": "05024fd4721b7f3e88dc575b92f5796b154e2b3c",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c04-integer-cells.md",
+      "revision": "05024fd4721b7f3e88dc575b92f5796b154e2b3c",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c07-graph-table.md",
+      "revision": "05024fd4721b7f3e88dc575b92f5796b154e2b3c",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T12:22:55.217367Z"
+}
