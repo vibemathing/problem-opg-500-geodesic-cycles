@@ -26,8 +26,8 @@
     "branch": "web/attempt-opg500-a01-c04-integer-cells",
     "issue_number": 3,
     "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 7,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/7"
   },
   "objective": "C04: preserve exact simple-path comparison signs, including ties, with bounded positive integer representatives via strict normalization and active-row determinant bounds.",
   "candidate_artifacts": [
