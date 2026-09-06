@@ -26,8 +26,8 @@
     "branch": "web/attempt-opg500-a01-c07-graph-table",
     "issue_number": 3,
     "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 10,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/10"
   },
   "objective": "C07: supply a complete graph-to-finite-table construction and typed Boolean compiler faithfulness proof, with explicit arc indices, incidence cancellation and a K5 path-order mutation fixture.",
   "candidate_artifacts": [
