@@ -26,8 +26,8 @@
     "branch": "web/attempt-opg500-a01-c06-order-slice",
     "issue_number": 3,
     "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 9,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/9"
   },
   "objective": "C06: isolate the finite-minimum and arc-choice order core in an uncompiled Lean candidate and audit its exact remaining graph-realization obligations.",
   "candidate_artifacts": [
