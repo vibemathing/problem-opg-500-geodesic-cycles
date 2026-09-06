@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "241c4b930d8ce1db231fff1647092554f55f3afb",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-finite-linear-characterization",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c01-linear",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "objective": "C01: prove the finite simple-path Boolean linear characterization, audit inclusive arc choice, weak comparisons and the strict common-path negation.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-a01-c01-linear",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c01-linear.md",
+      "sha256": "e00b9f2518d3deb322ce00a5c1a9acd0dd1220f32d960a887a57a6abc60209d7"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg500-c01-simple-minimum",
+      "text": "Positive edge lengths allow deletion of closed subwalks; finitely many simple x-y paths contain a length minimizer equal to graph distance.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c01-boolean-linear",
+      "text": "For each distinct cycle-vertex pair, an inclusive choice of an arc no longer than every simple path is equivalent to one arc attaining graph distance; the conjunction is a finite Boolean linear formula.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c01-strict-negation",
+      "text": "Within positive lengths, non-geodesicity is equivalent to a single simple path strictly shorter than both arcs for some pair.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple undirected G; C is a simple cycle.",
+    "All edge lengths are positive real numbers.",
+    "Pairs are distinct cycle vertices; the diagonal is discharged by the empty walk.",
+    "Allowed mathematical background: finite-graph-basic and real-ordered-field."
+  ],
+  "risks": [
+    "No mathematical solver or kernel execution receipt exists.",
+    "The local lemma does not establish root existence of suitable lengths.",
+    "Path enumeration is finite but can be factorial; the proposed replay has explicit caps.",
+    "The existing SMT implementation is a fixed unrelated fixture, not a general graph adapter."
+  ],
+  "open_obligations": [
+    "obligation:opg500-finite-linear-characterization",
+    "obligation:opg500-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "241c4b930d8ce1db231fff1647092554f55f3afb",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "241c4b930d8ce1db231fff1647092554f55f3afb",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "scripts/vibe_mathing/smt.py",
+      "revision": "241c4b930d8ce1db231fff1647092554f55f3afb",
+      "relation": "unknown"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/source-notes/opg500-a01-c01-source.md",
+      "revision": "8f96c9f9b49218d4eda9614115eec1c4b7c5b26f",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T07:20:00Z"
+}
