@@ -74,7 +74,27 @@ This file is generated from repository truth and bounded for the web channel. It
       "web_status": "active"
     }
   ],
-  "attempts": [],
+  "attempts": [
+    {
+      "artifacts": [],
+      "attempt_id": "attempt:web-20260906-opg500-a01",
+      "claims": [],
+      "completed_at": null,
+      "generator": "chatgpt-web-github",
+      "inputs": [
+        "problem-library/records/canonical-problems.jsonl",
+        "research/records/failed-routes.jsonl"
+      ],
+      "lifecycle": "running",
+      "method": "formalization",
+      "objective": "对固定有限图 G 与圈 C，严格证明 C 为 ℓ-geodesic 的定义等价于对每对 x,y∈V(C)，两条 C-arc 中至少一条达到 dist_ℓ(x,y)，并把该条件化为对有限条 simple x-y paths 的有限布尔组合线性等式/不等式；审计 strict/weak inequality 与并取结构。",
+      "obligation_graph_id": "graph:opg500-initial-v1",
+      "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+      "problem_id": "problem:opg-500-geodesic-cycles",
+      "route_id": "route:geodesic-linear-encoding-v1",
+      "started_at": "2026-09-06T05:03:30Z"
+    }
+  ],
   "failed_routes": [],
   "knowledge_operators": [
     {
@@ -203,7 +223,40 @@ This file is generated from repository truth and bounded for the web channel. It
       "source_id": "sagemath"
     }
   ],
-  "obligation_graphs": [],
+  "obligation_graphs": [
+    {
+      "attempt_id": "attempt:web-20260906-opg500-a01",
+      "graph_id": "graph:opg500-initial-v1",
+      "obligations": [
+        {
+          "dependencies": [
+            "obligation:opg500-finite-linear-characterization"
+          ],
+          "kind": "root_claim",
+          "obligation_id": "obligation:opg500-root",
+          "statement": {
+            "formal_declaration": null,
+            "language": "en",
+            "text": "For every finite 3-connected graph G, does there exist an assignment of positive real lengths ℓ:E(G)→R_{>0} such that every ℓ-geodesic cycle is peripheral?"
+          },
+          "statement_sha256": "ab6f891faac82c09c71a1cac0cad55ce0ded258d37159097c2e4488952f5066e"
+        },
+        {
+          "dependencies": [],
+          "kind": "lemma",
+          "obligation_id": "obligation:opg500-finite-linear-characterization",
+          "statement": {
+            "formal_declaration": null,
+            "language": "zh",
+            "text": "对固定有限图 G 与圈 C，严格证明 C 为 ℓ-geodesic 的定义等价于对每对 x,y∈V(C)，两条 C-arc 中至少一条达到 dist_ℓ(x,y)，并把该条件化为对有限条 simple x-y paths 的有限布尔组合线性等式/不等式；审计 strict/weak inequality 与并取结构。"
+          },
+          "statement_sha256": "2f3ae878173cf0c4283d949014261bb9ae0072a1b283776ef47e581122993e5d"
+        }
+      ],
+      "root_obligation_id": "obligation:opg500-root",
+      "route_id": "route:geodesic-linear-encoding-v1"
+    }
+  ],
   "problem_contract": {
     "acceptance": {
       "policy": "solution-admission-v1"
