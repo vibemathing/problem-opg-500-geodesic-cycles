@@ -26,8 +26,8 @@
     "branch": "web/attempt-opg500-a01-c02-excursions",
     "issue_number": 3,
     "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 5,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/5"
   },
   "objective": "C02: prove the external C-path comparison reduction, localize strict shortcut witnesses and audit completeness of the smaller enumeration.",
   "candidate_artifacts": [
