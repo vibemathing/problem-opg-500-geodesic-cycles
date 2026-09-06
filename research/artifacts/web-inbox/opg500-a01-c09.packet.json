@@ -17,8 +17,8 @@
     "branch": "web/attempt-opg500-a01-c09-universal-obstruction",
     "issue_number": 3,
     "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 12,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/12"
   },
   "objective": "C09: complete the existing eight-vertex universal obstruction candidate, freeze the graph-to-CNF necessary-condition certificate, and record a fresh finite replay without promoting metric bridges or transport to admission.",
   "candidate_artifacts": [
