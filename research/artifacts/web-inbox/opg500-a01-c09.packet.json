@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762672, "node_id": "R_kgDOUP0SsA", "default_branch": "main"},
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "76c8b56770a0894211bccd215cf23ec60021b871",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-root",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c09-universal-obstruction",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "objective": "C09: complete the existing eight-vertex universal obstruction candidate, freeze the graph-to-CNF necessary-condition certificate, and record a fresh finite replay without promoting metric bridges or transport to admission.",
+  "candidate_artifacts": [
+    {"candidate_id": "candidate:opg500-a01-c09-root-counterexample", "kind": "counterexample", "locator": "research/artifacts/candidates/opg500-a01-c09/root-counterexample.md", "sha256": "e6aa5dc3199b9e0642e3ab631791ee2529ab050e954b0e47b90f0951109d8ebd"},
+    {"candidate_id": "candidate:opg500-a01-c09-checker", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c09/check.py", "sha256": "2419fb5c30bd3ded07ff516bab70103a5b22c83d25b22bd9e30b0ad30b5539fc"},
+    {"candidate_id": "candidate:opg500-a01-c09-unsat-tree", "kind": "counterexample", "locator": "research/artifacts/candidates/opg500-a01-c09/unsat-tree.json", "sha256": "b7f6bb1aaa032313232be769f83f0a8e3862b852095e868f25ff82506b2d73be"},
+    {"candidate_id": "candidate:opg500-a01-c09-frozen-replay", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c09/execution.json", "sha256": "28844105dfd64d0178042131d8bdf395808730ec3a261084b3fb41f0600b4ea2"}
+  ],
+  "atomic_claims": [
+    {"claim_id": "claim:opg500-c09-universal-obstruction", "text": "For every positive real weighting on the specified eight-vertex graph, a nonperipheral vertex-geodesic cycle exists, by the M1--M4 candidate argument.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c09-monotone-perturbation", "text": "A finite strict-margin-preserving perturbation can make shortest paths unique without creating a geodesic cycle that was previously non-geodesic.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c09-necessary-cnf", "text": "The 76-clause necessary Boolean abstraction has a replayed 15-node, 89-unit-step, eight-conflict-leaf certificate and zero survivors among 832 eligible assignments.", "status": "candidate"}
+  ],
+  "assumptions": ["Finite simple undirected graph; all edge lengths strictly positive real numbers.", "Vertex-based inclusive shortest-arc geodesicity; peripheral means induced and connected-or-empty after vertex deletion.", "Cycle-space arithmetic over F2; finite graph basics and ordered real-field operations."],
+  "risks": ["M1--M4 and the graph-to-CNF implication remain unverified by a trusted root-level checker.", "The finite sandbox replay is candidate generation, not a verifier receipt or EvidenceLink.", "M3 requires uniqueness, obtained only via M2; tie cases must not be passed directly to it.", "No Lean toolchain was found in the current sandbox.", "The alternate 5913-pattern tight-subgraph proof is a different candidate and is not this certificate."],
+  "open_obligations": ["obligation:opg500-finite-linear-characterization", "obligation:opg500-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "problem-library/records/canonical-problems.jsonl", "revision": "76c8b56770a0894211bccd215cf23ec60021b871", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/records/obligation-graphs.jsonl", "revision": "76c8b56770a0894211bccd215cf23ec60021b871", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c01-linear.md", "revision": "76c8b56770a0894211bccd215cf23ec60021b871", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c04-integer-cells.md", "revision": "76c8b56770a0894211bccd215cf23ec60021b871", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c07-graph-table.md", "revision": "76c8b56770a0894211bccd215cf23ec60021b871", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T15:33:21.648271+00:00"
+}
