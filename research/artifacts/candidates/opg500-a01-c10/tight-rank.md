@@ -50,8 +50,10 @@ not use e; it is simple and its edges belong to T. The cycle e union P
 is vertex-geodesic. Every pair of cycle vertices belongs to P, and the
 P-subpath between them is globally shortest and is one of the cycle arcs.
 This argument allows arbitrarily many tied shortest endpoint paths.
-It is false as stated for a definition testing all interior edge points;
-that is not the frozen contract.
+The argument explicitly checks vertices, as required by the contract.
+In the usual finite metric realization it also extends to interior edge
+points by replacing external excursions with shortest cycle arcs; no
+such extension is needed for the root proof here.
 
 ## T3. Geodesic cycles generate the binary cycle space
 
@@ -168,6 +170,18 @@ bounded generator-side execution are retained in execution.json.
 A compact per-pattern-type summary and all 52 vector/cycle outputs are
 in summary.json. Full generated data are reproducible and included in
 the local downloadable candidate bundle, not promoted to verifier receipts.
+
+## Definition-side correction found during self-review
+
+An earlier version of T2 incorrectly said the complementary-path claim
+was false for interior edge points. That sentence was not a proof premise
+and is removed. For a finite graph realized as positive-length intervals,
+any path between points of C can leave C only through graph vertices.
+Replace every outside excursion by a no-longer cycle arc, using vertex
+geodesicity. The resulting C-walk is no longer, proving the interior-point
+version as well. The converse follows by restricting to vertices. This
+finite lifting argument makes no assertion about infinite topological
+cycles or metrics without this finite realization.
 
 ## Dependencies, limits and next slice
 
