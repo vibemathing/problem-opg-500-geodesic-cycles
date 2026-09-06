@@ -13,7 +13,7 @@
   "graph_id": "graph:opg500-initial-v1",
   "obligation_id": "obligation:opg500-root",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg500-a01-c10-tight-rank", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg500-a01-c10-tight-rank", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": 13, "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/13"},
   "objective": "C10: remove perturbation and shortest-path uniqueness from the universal obstruction, prove tight-core domination and rank deficiency, and construct an exact rational bad-cycle extractor with a distinct finite certificate.",
   "candidate_artifacts": [
     {"candidate_id": "candidate:opg500-a01-c10-root-all-ties", "kind": "counterexample", "locator": "research/artifacts/candidates/opg500-a01-c10/tight-rank.md", "sha256": "620a9344efa17b7b8d663d9b1dacbf0c5b3e82aa995904adc23b03610e60b7f1"},
