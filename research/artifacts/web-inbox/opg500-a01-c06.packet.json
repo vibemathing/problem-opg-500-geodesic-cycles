@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "5760c72bce91f0d5e596516b584d9650d1ff63d4",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-finite-linear-characterization",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c06-order-slice",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "objective": "C06: isolate the finite-minimum and arc-choice order core in an uncompiled Lean candidate and audit its exact remaining graph-realization obligations.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-a01-c06-order-slice",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c06-order-slice.lean",
+      "sha256": "b7c4eff87ed0283d88958bf664a1848dd950ba033aa99f90a473a369191b36f0"
+    },
+    {
+      "candidate_id": "candidate:opg500-a01-c06-faithfulness-map",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c06-faithfulness-map.md",
+      "sha256": "30ab4a93c940dd948c188d73cf8367535b234c92b8c613f1a73b8486debef267"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg500-c06-finite-order-core",
+      "status": "candidate",
+      "text": "The uncompiled Lean slice proposes eight order-theoretic lemmas deriving attained minima from complete sound finite tables and proving inclusive arc-choice equivalence to absence of a strict common shortcut."
+    },
+    {
+      "claim_id": "claim:opg500-c06-faithfulness-boundary",
+      "status": "candidate",
+      "text": "Graph path-family completeness, arc construction, positive-length walk reduction, distance identification and incidence-linearity remain separate realization obligations; the abstract slice alone does not close the target."
+    }
+  ],
+  "assumptions": [
+    "The Lean slice ranges over an arbitrary linear order and an indexed cost family.",
+    "Finite cost tables are explicitly required to be nonempty, sound and complete.",
+    "Distinguished arc indices must correspond to actual paths in the graph application.",
+    "Graph finiteness and positive real edge lengths are used in the separate graph realization map."
+  ],
+  "risks": [
+    "The Lean candidate has not been compiled or elaborated; no kernel or axiom report exists.",
+    "Declared fixture toolchain pins are not observed installed versions or execution authorization.",
+    "The registered Mathlib runtime remains quarantined and the channel has command_execution=false.",
+    "A complete proof over a narrowed path index type would not faithfully prove graph geodesicity."
+  ],
+  "open_obligations": [
+    "obligation:opg500-finite-linear-characterization",
+    "obligation:opg500-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "5760c72bce91f0d5e596516b584d9650d1ff63d4",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "5760c72bce91f0d5e596516b584d9650d1ff63d4",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c01-linear.md",
+      "revision": "5760c72bce91f0d5e596516b584d9650d1ff63d4",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "fixtures/lean-proof/lean-toolchain",
+      "revision": "5760c72bce91f0d5e596516b584d9650d1ff63d4",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "fixtures/lean-proof/lake-manifest.json",
+      "revision": "5760c72bce91f0d5e596516b584d9650d1ff63d4",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": ".codex/skills/math-formalization/references/pressure-tests.md",
+      "revision": "5760c72bce91f0d5e596516b584d9650d1ff63d4",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:44:13.715014Z"
+}
