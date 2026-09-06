@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762672, "node_id": "R_kgDOUP0SsA", "default_branch": "main"},
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "271f61c9074c5e62e239ba1df0a7c715825b9ee1",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-root",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg500-a01-c10-tight-rank", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": null, "pull_request_url": null},
+  "objective": "C10: remove perturbation and shortest-path uniqueness from the universal obstruction, prove tight-core domination and rank deficiency, and construct an exact rational bad-cycle extractor with a distinct finite certificate.",
+  "candidate_artifacts": [
+    {"candidate_id": "candidate:opg500-a01-c10-root-all-ties", "kind": "counterexample", "locator": "research/artifacts/candidates/opg500-a01-c10/tight-rank.md", "sha256": "620a9344efa17b7b8d663d9b1dacbf0c5b3e82aa995904adc23b03610e60b7f1"},
+    {"candidate_id": "candidate:opg500-a01-c10-extractor", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c10/check.py", "sha256": "71edbf5e492bda8d46008777351315d53106c8cab61288c88be4ba923883e7e3"},
+    {"candidate_id": "candidate:opg500-a01-c10-certificate-checker", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c10/verify.py", "sha256": "59a96e2274a9c1e03f3ddec3f8c0c68001665a3a718acdb9fa5c5c023840b008"},
+    {"candidate_id": "candidate:opg500-a01-c10-witness-summary", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c10/summary.json", "sha256": "64ec7df0caae341c96352a9f7122b5f46bfdd36766a4dec90cded42d8f711896"},
+    {"candidate_id": "candidate:opg500-a01-c10-replay", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c10/execution.json", "sha256": "d97307324b997a68ee52c9ec4e5f677ce1d5ee566bcea1f24a174f405e405d59"}
+  ],
+  "atomic_claims": [
+    {"claim_id": "claim:opg500-c10-all-ties-obstruction", "text": "The tight-subgraph domination/rank argument gives a bad geodesic cycle for every positive real weighting, without genericity or uniqueness.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c10-minimum-outside-span", "text": "A minimum-length cycle outside the binary span of tight triangles is geodesic; strict shortcut splitting proves the claim.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c10-finite-patterns", "text": "All 5913 necessary triangle-free-core/dominating-apex patterns have rank gap at least one.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c10-rational-extractor", "text": "The exact extractor and a separate output checker validate bad-cycle witnesses on 52 rational assignments; this is finite candidate checking only.", "status": "candidate"}
+  ],
+  "assumptions": ["Finite simple undirected graph; all edge lengths strictly positive real numbers.", "Vertex-based inclusive shortest-arc geodesicity; peripheral means induced and connected-or-empty after vertex deletion.", "Cycle-space arithmetic over F2; finite graph basics and ordered real-field operations."],
+  "risks": ["T1--T6 and the graph-distance mapping require trusted formal and faithfulness replay.", "The second local checker is still in the candidate-generation trust domain.", "Exact rational samples are not the proof of the all-real statement.", "No Lean executable or registered root verifier was run.", "The interior-point side note was corrected before PR; finite metric realization is handled by external-excursion replacement."],
+  "open_obligations": ["obligation:opg500-finite-linear-characterization", "obligation:opg500-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "problem-library/records/canonical-problems.jsonl", "revision": "271f61c9074c5e62e239ba1df0a7c715825b9ee1", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/records/obligation-graphs.jsonl", "revision": "271f61c9074c5e62e239ba1df0a7c715825b9ee1", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c09/root-counterexample.md", "revision": "271f61c9074c5e62e239ba1df0a7c715825b9ee1", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/source-notes/opg500-a01-c09-source-audit.md", "revision": "271f61c9074c5e62e239ba1df0a7c715825b9ee1", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T15:53:56.820175+00:00"
+}
