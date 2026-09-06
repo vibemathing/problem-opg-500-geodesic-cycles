@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "48ca93f17da6cf4635b45f0758cb229f8819fecc",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-finite-linear-characterization",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-c03-potentials",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": 6,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/6"
+  },
+  "objective": "C03: give a compact existential vertex-potential encoding, prove both projection directions and test anchoring, edge orientation, attainment and nonconvexity.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-a01-c03-potentials",
+      "kind": "formalization",
+      "locator": "research/artifacts/candidates/opg500-a01-c03-potentials.md",
+      "sha256": "feb969c468d3c79d2beceff573b0a3b0415ce1ffd2549f19a169082bcc9dd497"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg500-c03-potential-equivalence",
+      "text": "Anchored source-indexed potentials with both directed edge bounds and inclusive arc-attainment equalities exist exactly for positive lengths making C geodesic.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c03-polynomial-extension",
+      "text": "Shared cycle prefix sums give a polynomial-size extended Boolean linear formula; no polynomial-time or convex-program claim follows.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg500-c03-nonconvex-region",
+      "text": "Explicit positive length vectors on K4 make a fixed cycle geodesic while their midpoint does not, so its geodesic region need not be convex.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Finite simple undirected G; C is a simple cycle.",
+    "All edge lengths are positive real numbers.",
+    "Pairs are distinct cycle vertices; the diagonal is discharged by the empty walk.",
+    "Allowed mathematical background: finite-graph-basic and real-ordered-field."
+  ],
+  "risks": [
+    "No solver or kernel replay has run; C01 and C02 remain candidate dependencies.",
+    "The auxiliary-variable projection must not be dropped or incorrectly negated.",
+    "Both directed inequalities are needed for undirected edges.",
+    "This local encoding does not prove the root's universal existence claim."
+  ],
+  "open_obligations": [
+    "obligation:opg500-finite-linear-characterization",
+    "obligation:opg500-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "48ca93f17da6cf4635b45f0758cb229f8819fecc",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "48ca93f17da6cf4635b45f0758cb229f8819fecc",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c01-linear.md",
+      "revision": "48ca93f17da6cf4635b45f0758cb229f8819fecc",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/artifacts/candidates/opg500-a01-c02-excursions.md",
+      "revision": "48ca93f17da6cf4635b45f0758cb229f8819fecc",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T07:48:19.236053Z"
+}
