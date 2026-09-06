@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762672, "node_id": "R_kgDOUP0SsA", "default_branch": "main"},
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "89ce4a84d43e914c6d5e6be200580ecb8791b104",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-root",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg500-a01-c12-finite-descent", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": null, "pull_request_url": null},
+  "objective": "C12: remove the supplied-minimum hypothesis by explicit finite-table restricted minimum and strict descent, with complete graph realization and span closure retained.",
+  "candidate_artifacts": [
+    {"candidate_id": "candidate:opg500-a01-c12-finite-descent", "kind": "formalization", "locator": "research/artifacts/candidates/opg500-a01-c12/FiniteDescent.lean", "sha256": "964a69d8cbfb6c59080730be907aa137617ec3077961c69697f0766d861b58a3"},
+    {"candidate_id": "candidate:opg500-a01-c12-semantic-check", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c12/check_minimum.py", "sha256": "0e985793b58abe8af384d9ca612b98db0d0bac8c8baf75856e1ee488078666bd"},
+    {"candidate_id": "candidate:opg500-a01-c12-execution", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c12/execution.json", "sha256": "568cabf40c29cbc317f98417eba5fcb45e56f05c94635705ef0fc749264667da"},
+    {"candidate_id": "candidate:opg500-a01-c12-faithfulness", "kind": "formalization", "locator": "research/artifacts/candidates/opg500-a01-c12/finite-descent.md", "sha256": "f11c32d6bc38d90d7bd05102ccd875bf63bc0db8170c7b5a0316402306cf48c0"}
+  ],
+  "atomic_claims": [
+    {"claim_id": "claim:opg500-c12-restricted-minimum", "text": "A nonempty predicate-restricted portion of a finite object list has a weak minimum in a total preorder, including ties and duplicate occurrences.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c12-finite-descent", "text": "Complete finite enumeration, an outside object, closed combination and strict two-child splitting imply a good outside object without a supplied-minimum premise.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c12-semantic-audit", "text": "Exact finite selection checks cover 1396736 table/predicate/cost cases; finite mutation models isolate closure, strictness, completeness and outside nonemptiness.", "status": "candidate"}
+  ],
+  "assumptions": ["The root graph and canonical definitions remain unchanged.", "Weak comparison is reflexive, transitive and total; it excludes reversed strict decrease.", "The table contains all objects of the full cycle type; outside-span nonemptiness and strict splitting require the C10 graph argument."],
+  "risks": ["The Lean source has not been elaborated or kernel replayed.", "Finite semantic tests do not verify the universal theorem or the real-weight graph implication.", "The graph-to-table, XOR incidence, strict metric split, rank count and tight-distance bridges remain separate."],
+  "open_obligations": ["obligation:opg500-finite-linear-characterization", "obligation:opg500-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "problem-library/records/canonical-problems.jsonl", "revision": "89ce4a84d43e914c6d5e6be200580ecb8791b104", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/records/obligation-graphs.jsonl", "revision": "89ce4a84d43e914c6d5e6be200580ecb8791b104", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c10/tight-rank.md", "revision": "89ce4a84d43e914c6d5e6be200580ecb8791b104", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c11/MinimumOutside.lean", "revision": "89ce4a84d43e914c6d5e6be200580ecb8791b104", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c11/faithfulness.md", "revision": "89ce4a84d43e914c6d5e6be200580ecb8791b104", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T16:45:26.134021+00:00"
+}
