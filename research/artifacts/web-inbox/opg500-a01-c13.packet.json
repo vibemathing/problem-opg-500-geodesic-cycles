@@ -13,7 +13,7 @@
   "graph_id": "graph:opg500-initial-v1",
   "obligation_id": "obligation:opg500-finite-linear-characterization",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg500-a01-c13-local-characterization", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg500-a01-c13-local-characterization", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": 21, "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/21"},
   "objective": "RESULT_CANDIDATE_READY for the admitted local obligation: consolidate C01's exact necessary-and-sufficient finite simple-path reduction, all boundary cases and both proof directions, and execute a small rational AST/path/distance checker with falsifying mutations. Do not pursue the six deeper root graph bridges or claim trusted closure.",
   "candidate_artifacts": [
     {"candidate_id": "candidate:opg500-a01-c13-local-proof", "kind": "proof", "locator": "research/artifacts/candidates/opg500-a01-c13-local/characterization.md", "sha256": "25ce74d6f9369d4eb7e63a2fe78f05c93124e317ffe5174d8302e23f58f68e43"},
