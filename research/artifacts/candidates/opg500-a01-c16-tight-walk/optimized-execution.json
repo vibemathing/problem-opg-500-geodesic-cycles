@@ -1,0 +1,30 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"H_coefficient_kernel_masks\": [0, 4095], \"H_peripheral_actual_rank\": 11, \"H_peripheral_generator_count\": 12, \"actual_rank_gap_histogram\": {\"1\": 768, \"2\": 2752, \"3\": 2019, \"4\": 366, \"5\": 8}, \"core_patterns\": 64, \"cycles\": 239, \"execution_role\": \"generator_different_core_check\", \"input_sha256\": \"48a348703814d06ac5ca6ef49a4c8005af1ea4452c5adb6b698025254838d14c\", \"invalid_metric_inputs\": [{\"name\": \"zero\", \"reason\": \"positive rational vector\", \"rejected\": true}, {\"name\": \"negative\", \"reason\": \"positive rational vector\", \"rejected\": true}, {\"name\": \"float\", \"reason\": \"exact rational syntax required\", \"rejected\": true}, {\"name\": \"boolean\", \"reason\": \"exact rational syntax required\", \"rejected\": true}], \"methods\": [\"connected edge subsets\", \"coefficient-kernel rank-nullity\", \"Bellman-Ford exact rational\"], \"metric_counts\": {\"minimum_odd_cases\": 16, \"nontight_cycles\": 308, \"tied_pairs\": 185}, \"metric_input_sha256\": \"3ba69c422117d4eaffd187a13046430ee264e0270d2ceab5f20fc02c8aeb20f3\", \"metric_samples\": 36, \"necessary_patterns\": 5913, \"paths\": 2628, \"peripheral\": 12, \"scope\": \"finite certificate and listed rational metrics only\", \"source_sha256\": \"03d3f09293ee9b6ed35b683b9edf84d123fd5ed17bcfd3685196447e4a9b5e49\", \"triangle_free_core_patterns\": 41, \"trusted_verifier_receipt\": null, \"verdict\": \"candidate_only\"}\n",
+  "stderr": "",
+  "verdict": "candidate_only",
+  "execution_role": "generator_different_core_check",
+  "run_at": "2026-09-07T13:08:01.738250+00:00",
+  "python_version": "3.13.5",
+  "command": [
+    "python",
+    "-I",
+    "-O",
+    "-S",
+    "check_dual.py",
+    "../opg500-a01-c15-rank-interface"
+  ],
+  "elapsed_seconds": 2.844511,
+  "limits": {
+    "wall_seconds": 43,
+    "cpu_seconds": 40,
+    "address_space_bytes": 268435456,
+    "output_bytes": 1048576,
+    "processes": 1
+  },
+  "source_sha256": "03d3f09293ee9b6ed35b683b9edf84d123fd5ed17bcfd3685196447e4a9b5e49",
+  "trusted_verifier_receipt": null,
+  "stdout_sha256": "c60c544ec865e25871e0196878977e0a33eb35204efd86271e5d0813f1b9b188",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "output_sha256": "cd4de5abd8dd312bd19b9f59c26d6b7c14eeb26eed183126c749038106923924"
+}
