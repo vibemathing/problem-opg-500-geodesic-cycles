@@ -1,0 +1,32 @@
+{
+  "verdict": "candidate_only",
+  "remote_main": "73ae555464c10347c615a130927a2c7cc0e5ab49",
+  "c15_compressed_identity": {
+    "sha256": "207f635f5935a063678d5cd36bea93989ae2978fc10a4fe93eaefebeb12f368c",
+    "bytes": 70600,
+    "uncompressed_bytes": 472969,
+    "members": 27,
+    "packet_archive_name": "research/artifacts/candidates/opg500-a01-c15-supplement/historical-packet/opg500-a01-c15.packet.json"
+  },
+  "local_prior_objects": 27,
+  "chunks_checked": 16,
+  "all_chunk_sha256_match": true,
+  "chunk_sha256": [
+    "54196d9f368f936ca0157e3394725c2806d486eb61eea5ad26bd24e2ff6f7266",
+    "14591aad570a6eb360cbf2d8afb43510e77feed85f7a833257d47ca213c36635",
+    "d3ad31a209d1d69f3518fce5c58153250df0fcc458674941d33b617c5e7e1269",
+    "30696b1d73be67564a658ba676b1b85d81e7a1b1bc5a90db9ff19ce3dc0c2261",
+    "75d2031d03c0d82a38a13f107237c69a6ea6a3faa3ab4d983806d60f0de1aaed",
+    "6bf6041c10e458e159124289d2774aa547da759039cbdc2913ecfad1e690594c",
+    "21e550f7b39cf41571aca71a9b2cda693c4e7a1e94dd5799890266698c5bf558",
+    "867dab20e1f3a4af88a11c65299718ab3f6d6f7bde303fcc195e2eaf1c791f0e",
+    "30de34bfae2a2bf3fecb7cb1acb07573280665a853562493fdf973831a85bc59",
+    "d5a3b7f3e2fb88c8e020d138cc71b33143d4c5659073bd5bc06ea08c3eb0c668",
+    "47746f7df4df692fe0e47ef2fb6cb4378e2df24f2b7e7ac2de61453dd4d4d909",
+    "39420d8741fe1dac2e621afb1d2db3fe04a7a4d6f3882c8f1d1ddbc58cba67b6",
+    "4aaa8e0000ba91858bd78e5e9ab080e2dc932da1069dccdc54086d06d96b5b16",
+    "51c61e09c66c7a9c0a44d099cb433714a97c69185afaea919193582e8f4c404d",
+    "d590a0f00a932f0415d627b6d6410af9b8dff237153027eb321aad19a9f36922",
+    "d1080d114ff9b7fd072b6ea834be0f5a8518f19c32818656f805217f42c305a3"
+  ]
+}
