@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+      "harness_version": "1.1.2",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "97499c98e0774ef58c0be06ff8f3035c89cda1dffb6f9a9d222fb281b049cdb4",
+      "tree_sha256": "69f4d87c90894556519b20102315093bdee8f7f631440947b9ca4a069063f987"
+    },
+    {
+      "harness_snapshot_sha256": "8a287c29b2393988e82585ef21eb2fc894437c805dce292028fcdc1e00e6979e",
+      "harness_version": "1.2.3",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "27a22779f4ea8418115002a4a180553b0f23425b69e4deb76f2bd6ae893b2993",
+      "tree_sha256": "09348418fcc938579a093d092d6e4096524aa2cf580c5e0439a8cb675309e504"
+    }
+  ],
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "database_id": 1358762672,
+    "default_branch": "main",
+    "node_id": "R_kgDOUP0SsA",
+    "visibility": "public"
+  },
+  "schema_version": "1.0.0"
+}
