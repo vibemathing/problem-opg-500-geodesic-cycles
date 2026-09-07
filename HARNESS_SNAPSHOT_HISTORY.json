@@ -13,6 +13,13 @@
       "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
       "source_manifest_sha256": "27a22779f4ea8418115002a4a180553b0f23425b69e4deb76f2bd6ae893b2993",
       "tree_sha256": "09348418fcc938579a093d092d6e4096524aa2cf580c5e0439a8cb675309e504"
+    },
+    {
+      "harness_snapshot_sha256": "1e8692122e742f3a80800471d2a5d6d26d7d7d2efd3c79561a77e56336e3ac8f",
+      "harness_version": "1.2.4",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3",
+      "tree_sha256": "d7a34fdee45c16c717e68d7c6cc9cf0eb96f5a5e761cca5697d807fe2cd5979f"
     }
   ],
   "repository": "vibemathing/problem-opg-500-geodesic-cycles",
