@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762672, "node_id": "R_kgDOUP0SsA", "default_branch": "main"},
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "1e8692122e742f3a80800471d2a5d6d26d7d7d2efd3c79561a77e56336e3ac8f",
+  "base_revision": "7ae092f383ae891be51dd21fd423eeecec54fa66",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-finite-linear-characterization",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg500-a01-c13-local-characterization", "issue_number": 3, "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3", "pull_request_number": 21, "pull_request_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/pull/21"},
+  "objective": "RESULT_CANDIDATE_READY for the admitted local obligation: consolidate C01's exact necessary-and-sufficient finite simple-path reduction, all boundary cases and both proof directions, and execute a small rational AST/path/distance checker with falsifying mutations. Do not pursue the six deeper root graph bridges or claim trusted closure.",
+  "candidate_artifacts": [
+    {"candidate_id": "candidate:opg500-a01-c13-local-proof", "kind": "proof", "locator": "research/artifacts/candidates/opg500-a01-c13-local/characterization.md", "sha256": "25ce74d6f9369d4eb7e63a2fe78f05c93124e317ffe5174d8302e23f58f68e43"},
+    {"candidate_id": "candidate:opg500-a01-c13-local-checker", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c13-local/check.py", "sha256": "229584dedad867e2bf57ebe3997c9cd87cfe5394e6a6474665a6c3fd9acdb2aa"},
+    {"candidate_id": "candidate:opg500-a01-c13-local-inputs", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c13-local/fixtures.json", "sha256": "7389ece84aa90172a6e88dcb6da931147990a9f060bf4c615216ac890c5c439b"},
+    {"candidate_id": "candidate:opg500-a01-c13-local-checks", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c13-local/checks.json", "sha256": "161bca144aad07c4d1185f0e70d3fbe96407d4fba889d90d8d52b9d7c752bc6a"},
+    {"candidate_id": "candidate:opg500-a01-c13-local-execution", "kind": "computation", "locator": "research/artifacts/candidates/opg500-a01-c13-local/execution.json", "sha256": "67479853f663ee99995f615baef93af64583976b2e96e50496b4d2519fb32f91"}
+  ],
+  "atomic_claims": [
+    {"claim_id": "claim:opg500-c13-local-reduction", "text": "For any fixed finite simple undirected graph, positive real edge vector and simple cycle, repository geodesicity equals the finite pairwise OR of two universal weak simple-path comparison branches; soundness and completeness are exact.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c13-shortest-simple-path", "text": "Positive walk-loop deletion terminates by edge count; the nonempty finite simple-path family attains the walk distance without assuming prior existence of a shortest walk.", "status": "candidate"},
+    {"claim_id": "claim:opg500-c13-local-mutations", "text": "Actual Fraction-based checks agree on 73 fixture cycles and 88 further cycle cases over all 64 labelled four-vertex graphs with two assignments; all five logic mutations are exposed and three invalid numeric inputs rejected.", "status": "candidate"}
+  ],
+  "assumptions": [
+    "Finite simple undirected G, simple cycle with at least three vertices, strictly positive real edge lengths; no root three-connectivity is needed by the local lemma.",
+    "All distinct unordered cycle-vertex pairs and all simple competing paths are retained; the diagonal distance is zero.",
+    "Inclusive arc choice, real total order, finite minimum induction and integer edge-incidence arithmetic; shared edges cancel."
+  ],
+  "risks": [
+    "RESULT_CANDIDATE_READY is readiness of a bounded candidate, not a trusted Result or obligation admission.",
+    "The executed rational examples check an implementation; the universal all-real claim rests on the separate proof, not sample extrapolation.",
+    "The local sandbox run is generator-side and is not a registered verifier execution or a GitHub command-execution capability.",
+    "No Lean source was compiled and no kernel or axiom audit was run. C10/C11/C12 root proof bridges are not imported.",
+    "Both admitted obligations remain open in trusted records pending appropriate formal and statement-faithfulness review."
+  ],
+  "open_obligations": ["obligation:opg500-finite-linear-characterization", "obligation:opg500-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "problem-library/records/canonical-problems.jsonl", "revision": "7ae092f383ae891be51dd21fd423eeecec54fa66", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/records/obligation-graphs.jsonl", "revision": "7ae092f383ae891be51dd21fd423eeecec54fa66", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c01-linear.md", "revision": "7ae092f383ae891be51dd21fd423eeecec54fa66", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-500-geodesic-cycles", "path": "research/artifacts/candidates/opg500-a01-c12/finite-descent.md", "revision": "7ae092f383ae891be51dd21fd423eeecec54fa66", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-07T04:48:10Z"
+}

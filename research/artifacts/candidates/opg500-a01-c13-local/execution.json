@@ -1,0 +1,33 @@
+{
+  "verdict": "candidate_only",
+  "execution_role": "candidate_generation_sandbox",
+  "run_at": "2026-09-07T04:35:19.610518+00:00",
+  "command": [
+    "python",
+    "-I",
+    "-S",
+    "check.py"
+  ],
+  "python_version": "3.13.5",
+  "wall_limit_seconds": 30,
+  "cpu_limit_seconds": 25,
+  "address_space_limit_bytes": 268435456,
+  "file_output_limit_bytes": 1048576,
+  "processes": 1,
+  "exit_code": 0,
+  "elapsed_seconds": 0.10249,
+  "source_sha256": "229584dedad867e2bf57ebe3997c9cd87cfe5394e6a6474665a6c3fd9acdb2aa",
+  "fixtures_sha256": "7389ece84aa90172a6e88dcb6da931147990a9f060bf4c615216ac890c5c439b",
+  "stdout_sha256": "4b83ae89bde75b61d61e2e56d8a70d1326dae0bc368e683d2016a8a311759c99",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "{\"all_exact_comparisons_agree\": true, \"checks_sha256\": \"161bca144aad07c4d1185f0e70d3fbe96407d4fba889d90d8d52b9d7c752bc6a\", \"fixture_count\": 9, \"fixture_cycles_checked\": 73, \"fixture_pair_tables\": 59, \"four_vertex_cycle_checks\": 88, \"four_vertex_graphs\": 64, \"four_vertex_weighted_instances\": 128, \"invalid_inputs_rejected\": 3, \"mutation_tests_rejected\": 5, \"verdict\": \"candidate_only\"}\n",
+  "stderr": "",
+  "lean_replay": "not_performed",
+  "trusted_verifier_receipt": null,
+  "runtime_probe": {
+    "lean_available": false,
+    "lake_available": false,
+    "elan_available": false
+  },
+  "scope": "Exact finite implementation tests, not universal verification or admission"
+}
