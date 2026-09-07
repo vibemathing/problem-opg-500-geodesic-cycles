@@ -1,0 +1,64 @@
+{
+  "artifacts": [
+    {
+      "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/TightWalk.lean",
+      "sha256": "9bba8430bbbf7e024ab2b0f39e07f2107c5320280611bd400bc6278db1404845"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/bridge-audit.md",
+      "sha256": "9d7c33afc6fd751c6f0d5a541642c46137d007ef5c7a1ae73d0b1c20bfed035a"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/check_dual.py",
+      "sha256": "03d3f09293ee9b6ed35b683b9edf84d123fd5ed17bcfd3685196447e4a9b5e49"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/recheck.json",
+      "sha256": "cd4de5abd8dd312bd19b9f59c26d6b7c14eeb26eed183126c749038106923924"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/ordinary-execution.json",
+      "sha256": "b1c3cce16cb7896276cc4326e1d30e36a517c96d861f9f35f887a1aebdb19e41"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/optimized-execution.json",
+      "sha256": "ee29ca4e26610c431fc0246a88d23ba993849e4e5d09d16cbe0f5ad2b683683d"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/semantic-check.json",
+      "sha256": "bb4d780bbbf067c46624c7a8f70f093624c1a8d81c39f623aa3d4695b067c687"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/transport-recheck.json",
+      "sha256": "814f8b0ab161c78d1b5e9eae33994299a8eab7b32a258191063f426bdb31dcd2"
+    }
+  ],
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "base_revision": "73ae555464c10347c615a130927a2c7cc0e5ab49",
+  "best_verified_candidate": "none",
+  "best_verified_result": "none",
+  "failed_routes": [],
+  "final_status_locator": "Issue #3 latest C16 checkpoint",
+  "first_unformalized_lemma": "Instantiate real CostSpec and derive DistanceValue using positive finite loop-erasure/simple-path minimum in the same Walk representation; elaborate TightWalk.lean and audit the exact statement.",
+  "graph_id": "graph:opg500-initial-v1",
+  "historical_backlog": {
+    "C15_missing27": "merged PR24, reconstructed compressed and all16 chunk digests match",
+    "original31": "merged PR23, exact original byte identity",
+    "retransmitted_historical_objects": []
+  },
+  "lean_replay": "not_run",
+  "new_work": "Generic tight-walk lifting source plus different-core finite dual/rational replay",
+  "next_action": "Replay the first bridge in an admitted Lean/real environment; do not replace this with another admission_request or with finite certificate success.",
+  "obligation_id": "obligation:opg500-root",
+  "open_obligations": [
+    "obligation:opg500-root",
+    "obligation:opg500-finite-linear-characterization"
+  ],
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "status": "NONTERMINAL_CHECKPOINT",
+  "toolchain_fingerprint": null,
+  "transport_at_creation": "New C16 packet not yet PR-bound; final receipt is appended to Issue3 after actual checks/merge.",
+  "trusted_verifier_receipt": null,
+  "verdict": "candidate_only"
+}
