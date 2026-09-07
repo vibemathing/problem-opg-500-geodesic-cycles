@@ -1,0 +1,17 @@
+{
+  "base_revision": "31b64fe0dadd119feb9052627ad9bfbfb6ac506f",
+  "candidate_hashes_checked": 22,
+  "draft_sha256": "953bf15e40aa5430d8ef7c809cb2f6323b010a86799aa656f9e42774eeb448a1",
+  "files": 29,
+  "issue_comment_posted": false,
+  "new_branch_created": false,
+  "patch_apply_exit_code": 0,
+  "patch_check_exit_code": 0,
+  "patch_sha256": "0f4519fc4bd89b2e1163004ca1d30da5ba8de51813a784e725a2b91551a33324",
+  "remote_write_performed": false,
+  "schema_errors": [],
+  "trusted_admission": false,
+  "verdict": "candidate_only",
+  "zip_bytes": 77793,
+  "zip_sha256": "fa6529212f25784dd5afa42bad4b7123328228ddf320c7925b869b568e64b426"
+}
