@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762672,
+    "node_id": "R_kgDOUP0SsA",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "harness_snapshot_sha256": "5d7953185c4440203fd85a050d26fc035c377230faa8be2da232dacf7e125c85",
+  "base_revision": "175bff10f8f58a5e38323202494ae408206d974f",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "graph_id": "graph:opg500-initial-v1",
+  "obligation_id": "obligation:opg500-root",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg500-a01-transport-t01",
+    "issue_number": 3,
+    "issue_url": "https://github.com/vibemathing/problem-opg-500-geodesic-cycles/issues/3",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "objective": "Transport reconciliation t01: preserve existing artifact bytes and per-file provenance without new mathematical research or verification upgrades.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg500-transport-t01-01",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/README.md",
+      "sha256": "fcc7cba7c962da1a0403a6285d026911c57ab2246c0acbf15db1689738f2731c"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-02",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/integrity.json",
+      "sha256": "b0a114e4a48e7b3a8feb8dc1c96d45e9e3c0b276439ba17a770847a4e218f2a6"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-03",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/manifest.json",
+      "sha256": "938fe45a9f6cbb2fdfeeb8d99283469e9cd07ad5e66a43e2aaa61f75e6bd8a8b"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-04",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/payload-01.b64.txt",
+      "sha256": "319ad7751f9e18a85860c17c122de5fd56465bec6ac63a7f40a6010afcb68e6e"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-05",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/payload-02.b64.txt",
+      "sha256": "406c6900df5ae89c60850bc879f4f655f69044d74b73e4c8397628c8f463ad7c"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-06",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/payload-03.b64.txt",
+      "sha256": "086ec2e2dc85d93d20961e09043c7354d56638809872d93867eaefbc21adbf82"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-07",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/payload-04.b64.txt",
+      "sha256": "edea37cb327182f9d7e5d79932ca3a869041f3a72c911929a44c47808c89feb9"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-08",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/payload-05.b64.txt",
+      "sha256": "64ee05ca8286b795f6f3e08e19ddbd1a78adfb457e7ec027352634ce0cbcadb6"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-09",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/payload-06.b64.txt",
+      "sha256": "e4dd94a24a0127dc4e902c98469dfb322426db674ddaf845da492789ed6f239c"
+    },
+    {
+      "candidate_id": "candidate:opg500-transport-t01-10",
+      "kind": "computation",
+      "locator": "research/artifacts/candidates/opg500-a01-transport-t01/unpack.py",
+      "sha256": "c3a94840424d48a792cc750259ff86e104b556e765a3bce10034e6d49f705da4"
+    }
+  ],
+  "atomic_claims": [],
+  "assumptions": [
+    "Original archived text is historical candidate material; graph label conventions are preserved."
+  ],
+  "risks": [
+    "Lossless archive members are not separately expanded repository files.",
+    "Historical execution records remain generator-side; no mathematical replay occurred in this transport.",
+    "Lean and SMT claims without actual replay stay pending or unverified."
+  ],
+  "open_obligations": [
+    "obligation:opg500-root",
+    "obligation:opg500-finite-linear-characterization"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "175bff10f8f58a5e38323202494ae408206d974f",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-500-geodesic-cycles",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "175bff10f8f58a5e38323202494ae408206d974f",
+      "relation": "exact"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-07T00:48:27.475296+00:00"
+}

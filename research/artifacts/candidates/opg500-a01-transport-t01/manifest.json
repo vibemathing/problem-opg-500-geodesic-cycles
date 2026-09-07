@@ -1,0 +1,169 @@
+{
+  "format": "opg500-lossless-text-archive-v1",
+  "verdict": "candidate_only",
+  "purpose": "Transport existing UTF-8 research artifacts without new mathematics or replay. Historical statuses are not live repository state.",
+  "source_bundle": "opg500-root-candidate-checkpoint.zip",
+  "source_bundle_sha256": "bae5f208fe635734e22b0d4f294d12521c86622d7cf75a075c8931a9a8d76abf",
+  "original_file_count": 16,
+  "archived_member_count": 16,
+  "existing_alias_count": 0,
+  "uncompressed_json_bytes": 391227,
+  "uncompressed_json_sha256": "5b26c39a7131bfe424fa76564dda0c1ce0ac1176d8e9f5a559088d52dd1271d7",
+  "compression": "xz (LZMA2), then base64; concatenate chunks in listed order; whitespace is insignificant only to decoding",
+  "compressed_bytes": 23240,
+  "compressed_sha256": "71f6dc7fc5f56aff38ac02ba0f3a5e85c5413422e1d07bbeb7b0b26213091d20",
+  "privacy_audit": "All decoded original UTF-8 text passed current private-text and forbidden-key scan before encoding; no full chats or external source full texts were included.",
+  "historical_execution_policy": "Imported generator-side records only; no mathematical computation, Lean compilation or SMT execution was repeated during this transport.",
+  "chunks": [
+    {
+      "path": "payload-01.b64.txt",
+      "bytes": 6001,
+      "sha256": "319ad7751f9e18a85860c17c122de5fd56465bec6ac63a7f40a6010afcb68e6e",
+      "git_blob": "50972bfbbd1fa143ab0fa28c65adc4a54e3eb476"
+    },
+    {
+      "path": "payload-02.b64.txt",
+      "bytes": 6001,
+      "sha256": "406c6900df5ae89c60850bc879f4f655f69044d74b73e4c8397628c8f463ad7c",
+      "git_blob": "772bc90efc94925719db97b7098e7434753e7890"
+    },
+    {
+      "path": "payload-03.b64.txt",
+      "bytes": 6001,
+      "sha256": "086ec2e2dc85d93d20961e09043c7354d56638809872d93867eaefbc21adbf82",
+      "git_blob": "23e9c1861c0068606237b3391da1f11f4b10668e"
+    },
+    {
+      "path": "payload-04.b64.txt",
+      "bytes": 6001,
+      "sha256": "edea37cb327182f9d7e5d79932ca3a869041f3a72c911929a44c47808c89feb9",
+      "git_blob": "ab037280f329fa31a0baeb1e838cfee7820daf43"
+    },
+    {
+      "path": "payload-05.b64.txt",
+      "bytes": 6001,
+      "sha256": "64ee05ca8286b795f6f3e08e19ddbd1a78adfb457e7ec027352634ce0cbcadb6",
+      "git_blob": "cf979323c8b42c920da026c15597c331fa6de0e2"
+    },
+    {
+      "path": "payload-06.b64.txt",
+      "bytes": 989,
+      "sha256": "e4dd94a24a0127dc4e902c98469dfb322426db674ddaf845da492789ed6f239c",
+      "git_blob": "0fb2d0ea246dd698f410b3217f77ae8ddb9adfa1"
+    }
+  ],
+  "members": [
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/petersen.root-formula.json",
+      "bytes": 48142,
+      "sha256": "a14d83d45018d52b22876922037ed10462410da7e10214f78dcb55e92e9e2cec",
+      "git_blob": "47483e7c1a2dbd54b2754185b7f579cd39aa240a",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/k4.root-formula.json",
+      "bytes": 1480,
+      "sha256": "ba6e06c323a408a593209608c060a6cc689ab0588e8137dfee6d851d35dae432",
+      "git_blob": "56e3bd6f32dfdc7f76fdc8523044a9e88ebe0303",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/manifest.json",
+      "bytes": 3405,
+      "sha256": "c746f779899c28e8df45d35ec2b196eef49ca3c77200fb56e65e513ff0b05df1",
+      "git_blob": "c6c3e9b4e6985cc9f52e3f77eac6589f8100df38",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/k4.audit.json",
+      "bytes": 4235,
+      "sha256": "103c574846ce545903d61f51719e23c31dde2c3a493fa0ad7d108c1037a7542d",
+      "git_blob": "8573307a8d4db56fc467d40179f715ca66c7409e",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/triangular-prism.audit.json",
+      "bytes": 13771,
+      "sha256": "c7f4d5d53416f5c0aa5fce19df0810fe603458c2478138afe627b0066e6fadac",
+      "git_blob": "9bccc966c3a18e1c5a57e5190d4cc3b70a6f9488",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/opg500-root-exact-replay.py",
+      "bytes": 12679,
+      "sha256": "fafff15d114464c60aa89850436885b6569b6a584ae90eacd8e4f167dc82e807",
+      "git_blob": "d2812923286f67bae6c1dd63e133c9cf4f428e94",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/triangular-prism.root-formula.json",
+      "bytes": 6321,
+      "sha256": "3cbc598299edf4372b5d6e1adf6d898234ae3bf8ad3da3f0d53e036f67d45ce1",
+      "git_blob": "2a8a93deeb335a06957fb2043f73072fa915fd5f",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/triangular-bipyramid.root-formula.json",
+      "bytes": 13748,
+      "sha256": "bfcbe845940265e36c8ab4660ed57b7e5022edc7105cb12b43aa32f5ca555d51",
+      "git_blob": "0dfff56bce0db2091747bc6927e6f6f2cf3c4f21",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/wheel-rim5.root-formula.json",
+      "bytes": 13398,
+      "sha256": "fe01ec3617594f498eee582ba7df2f297e492e0b295d13babdb903e64056f789",
+      "git_blob": "a9efa78680fe04f5bcc0dd8459d4d9d1c1369347",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/k33.audit.json",
+      "bytes": 14175,
+      "sha256": "ad80546a225a9aaca1e4900181f460675f70efd7cbefe79f08431855c6a72c59",
+      "git_blob": "c38d8c2cfb388bfd44ed5671fec67d56e4e8d0cb",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/petersen.audit.json",
+      "bytes": 114581,
+      "sha256": "2b64be1b9b5214b05096c7b609b6e262d13ba963cffeace0ba08f6cb31f87a29",
+      "git_blob": "ec35dd9e36800ec4932ddf01dcc62120ab134a44",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/cube-prism-labels.audit.json",
+      "bytes": 40891,
+      "sha256": "0aebeec2eef2582c74e419eac1c6b1f38f65acf8172bfb3afb40224d685cafd8",
+      "git_blob": "c2c1aeb8f75cb1f9bac491ff142fbe05f06cc4c2",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/wheel-rim5.audit.json",
+      "bytes": 18876,
+      "sha256": "cff22c01c7f5c073965686c2728737127a4f1d8a1812498fb1f45edfbf01c4fe",
+      "git_blob": "7ebb88df853d191725f189e2cf25bf3097a5dd2c",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/k33.root-formula.json",
+      "bytes": 3713,
+      "sha256": "5ab1fd2c98508042a385f6e6b2ccd73349421cf207a7f6737e378dab31a58594",
+      "git_blob": "b6fe3924f1712123cae0a292ff60838e42387dba",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/triangular-bipyramid.audit.json",
+      "bytes": 16229,
+      "sha256": "f0649edf4146101aa0df7d103c4f775890f32fa88d5cc447d0f2f4ba99504a29",
+      "git_blob": "5f9bc8ea3a7067ff2b66b0bfb4ec20c3e86e81bd",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "path": "research/artifacts/candidates/opg500-root-exact/cube-prism-labels.root-formula.json",
+      "bytes": 25246,
+      "sha256": "9f5bbb0f54c396a680bc738c3394d4b3131f6f4e93b8e46181036f87d6620709",
+      "git_blob": "5476a431540f4569ae3bc24fbcda92445c237c08",
+      "storage": "lossless_archive_member"
+    }
+  ]
+}
