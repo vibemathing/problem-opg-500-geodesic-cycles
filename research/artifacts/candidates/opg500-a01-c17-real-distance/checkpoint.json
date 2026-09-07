@@ -1,0 +1,35 @@
+{
+  "attempt_id": "attempt:web-20260906-opg500-a01",
+  "axiom_closure": "not_observed",
+  "best_verified_candidate": "none",
+  "best_verified_result": "none",
+  "failed_routes": [],
+  "first_assurance_gap": "Elaborate unchanged C16 plus C17.exists_simple_le / exists_shortest_simple / finite_real_tight_distance at pinned Lean4.33.0/Mathlib commit and audit exact theorem/axioms.",
+  "first_geometry_without_full_Lean_body": "Internally C-disjoint shortcut from a non-geodesic simple cycle, and simple child cycles in the original graph representation.",
+  "graph_id": "graph:opg500-initial-v1",
+  "historical_backlog": "Already merged; no PR23-25 or T01-T03 duplication.",
+  "kernel_runs": [],
+  "lean_status": "source_only_unelaborated",
+  "new_admission_request": false,
+  "new_work": "Real CostSpec; typed erasure; genuine finite Simple Walk family; derived DistanceValue and tight distance; next-bridge strict-split algebra and geometry proof.",
+  "next_action": "Replay those pinned sources in an approved installed environment; repair concrete API failures without weakening reachability/positivity. Continue cycle geometry without recounting 5913 patterns.",
+  "obligation_id": "obligation:opg500-root",
+  "open_obligations": [
+    "obligation:opg500-root",
+    "obligation:opg500-finite-linear-characterization"
+  ],
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "read_base": "ac7b5331210322e82568d5a6fa5893aec90b47ae",
+  "repository_fixture_configuration_fingerprint": "0b3e4b4f458ae5e98a1ac1c5e1ba7c026f129e320aa9956e9ff597f713a462c3",
+  "route_id": "route:geodesic-linear-encoding-v1",
+  "runtime_toolchain_fingerprint": null,
+  "statement_repair": {
+    "claim": "All pairs have a nonempty simple-path family",
+    "corrected": "Nonempty exactly for reachable endpoints; diagonal has nil walk; no finite real DistanceValue for unreachable pair",
+    "counterexample": "Two isolated vertices and distinct endpoints",
+    "root_affected": false
+  },
+  "status": "NONTERMINAL_CHECKPOINT",
+  "transport_status_at_creation": "Candidate prepared before PR; final commit/check/merge receipt belongs to Issue3 after observation.",
+  "verdict": "candidate_only"
+}

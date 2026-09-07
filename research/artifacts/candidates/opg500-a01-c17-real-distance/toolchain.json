@@ -1,0 +1,50 @@
+{
+  "actual_axioms": null,
+  "base_revision": "ac7b5331210322e82568d5a6fa5893aec90b47ae",
+  "c16_dependency": {
+    "git_blob": "5caca608044dcafd52648408a0696d58d9fd6e7e",
+    "path": "research/artifacts/candidates/opg500-a01-c16-tight-walk/TightWalk.lean",
+    "sha256": "9bba8430bbbf7e024ab2b0f39e07f2107c5320280611bd400bc6278db1404845"
+  },
+  "files": [
+    {
+      "bytes": 25,
+      "git_blob": "025e59548e48cf71f2744154e2890beefe30a258",
+      "path": "fixtures/lean-proof/lean-toolchain",
+      "sha256": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b"
+    },
+    {
+      "bytes": 270,
+      "git_blob": "08d212a53bc21d83a2d7f826d2bc76c1ecaf2a68",
+      "path": "fixtures/lean-proof/lakefile.toml",
+      "sha256": "f2cad10028d2646f89a88e466124cf63f3fde5d7719ffec637b04799e8806fe5"
+    },
+    {
+      "bytes": 3171,
+      "git_blob": "d1580b698c57aa5a2d6b2e8542c8fa3940832116",
+      "path": "fixtures/lean-proof/lake-manifest.json",
+      "sha256": "f7f705e46b49fdd7318039102cd9228ab6cd966bf9ffc73590e6e941e5d230c6"
+    }
+  ],
+  "fingerprint_method": "SHA256 of each filename + NUL + raw bytes + NUL, in lean-toolchain/lakefile.toml/lake-manifest.json order. This is the existing fixture configuration, not an installed executable attestation.",
+  "fixedToolchain_field": false,
+  "fixture_configuration_fingerprint": "0b3e4b4f458ae5e98a1ac1c5e1ba7c026f129e320aa9956e9ff597f713a462c3",
+  "formal_status": "source_only_unelaborated",
+  "lock_interpretation": "Use the exact rev fields, not moving inputRev names. fixedToolchain=false is retained, not treated as an admission.",
+  "network_observation": {
+    "error_class": "DNS_name_resolution_failed",
+    "operation": "bounded read-only tarball attempt for the same repository",
+    "status": "failed_before_HTTP",
+    "used_as_mathematical_evidence": false
+  },
+  "no_new_admission_request": true,
+  "registered_toolchain_allowlist_for_root": "not_present",
+  "registry_read": "research/verifiers.json",
+  "runtime_toolchain_fingerprint": null,
+  "source_api_resolution": "Finite.of_injective; fintypeNodupList; Finset.exists_min_image; List.nodup_cons and List.cons.inj; real add order cancellation. Moving official API docs were consulted as discovery only. The exact pinned package has not been loaded in this runtime.",
+  "source_profile": "lean-mathlib-local",
+  "source_profile_status": "quarantined",
+  "target_lean": "leanprover/lean4:v4.33.0",
+  "target_mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "verdict": "candidate_only"
+}

@@ -1,0 +1,70 @@
+{
+  "archived_member_count": 6,
+  "chunks": [
+    {
+      "bytes": 6001,
+      "path": "payload-01.b64.txt",
+      "sha256": "9fb9b819f105ae6cb33760f0c0720b1c51db653d592c5f4fc4cef6ab17741ad5"
+    },
+    {
+      "bytes": 6001,
+      "path": "payload-02.b64.txt",
+      "sha256": "78e1559c64d32311bbf40f85c08c1dc935b0a3cc797fd20aa13f4a6fc3eff1e3"
+    },
+    {
+      "bytes": 1305,
+      "path": "payload-03.b64.txt",
+      "sha256": "522416917d6a618e6a33ca3637daed1669c5c68cfb6867f16e055764f3ba56ba"
+    }
+  ],
+  "compressed_bytes": 9976,
+  "compressed_sha256": "a8162ea05f6b60c8d1bfabdb984575395a84bccd76d5f90c441e1dae0b61695a",
+  "compression": "XZ/LZMA2 then base64, concatenate listed chunks in order",
+  "decoder": "research/artifacts/candidates/opg500-a01-transport-t01/unpack.py",
+  "existing_alias_count": 0,
+  "format": "opg500-lossless-text-archive-v1",
+  "members": [
+    {
+      "bytes": 15018,
+      "path": "research/artifacts/candidates/opg500-a01-c17-real-distance/check.py",
+      "sha256": "bed057247990c91fe5d93ee5da1c108f706332bb5118315264de7d7233400ed1",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "bytes": 19306,
+      "path": "research/artifacts/candidates/opg500-a01-c17-real-distance/checks.json",
+      "sha256": "ec66d38d7a61c9cc0ddd579df277b6e228734f5f693448dc86fd103075a94c55",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "bytes": 1249,
+      "path": "research/artifacts/candidates/opg500-a01-c17-real-distance/ordinary-execution.json",
+      "sha256": "633b24043e763366fc007f59762ed144aae4f7fdb5726d559cba7344ffd1ed77",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "bytes": 1259,
+      "path": "research/artifacts/candidates/opg500-a01-c17-real-distance/optimized-execution.json",
+      "sha256": "27e4ce5f9c968ea027c0699c0b53aca9d53bcaf39d7b573be5b094348b66ffb9",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "bytes": 7501,
+      "path": "research/artifacts/candidates/opg500-a01-c17-real-distance/replay.py",
+      "sha256": "cd8a66ccbd92ec6edd947b7884b4f3466e65d34518a2df78b6827e134b66dbda",
+      "storage": "lossless_archive_member"
+    },
+    {
+      "bytes": 1688,
+      "path": "research/artifacts/candidates/opg500-a01-c17-real-distance/replay-observation.json",
+      "sha256": "14f53dea26445d0d41aca8ac1980bc5b66803c0eb5017900685b0603e0e62077",
+      "storage": "lossless_archive_member"
+    }
+  ],
+  "original_file_count": 6,
+  "privacy": "Decoded original UTF-8 checked before encoding. Member names are not separately expanded repository files.",
+  "purpose": "Six NEW C17 source/output/execution members. No old package or old execution is retransmitted. Decode using the unchanged T01 unpack.py before replay.",
+  "uncompressed_json_bytes": 50113,
+  "uncompressed_json_sha256": "85d0739c07fdaebe6a61b2c30ff465331df1f30e2847cbdc940e600c797652d1",
+  "verdict": "candidate_only"
+}
