@@ -1,0 +1,77 @@
+{
+  "verdict": "candidate_only",
+  "scope": "historical_artifact_disposition_not_mathematical_verification",
+  "base_revision": "2e526938f1ee2e79d39a29405a55e09ef17c7686",
+  "original_file_count": 64,
+  "archive_members": 62,
+  "existing_aliases": 2,
+  "batch_manifests": [
+    {
+      "batch": "T01",
+      "path": "research/artifacts/candidates/opg500-a01-transport-t01/manifest.json",
+      "sha256": "938fe45a9f6cbb2fdfeeb8d99283469e9cd07ad5e66a43e2aaa61f75e6bd8a8b",
+      "originals": 16,
+      "pr": 16,
+      "head": "35b42bbee21f7aa99514e8e35a8958153572a270",
+      "merge": "eb594509c154a8edbaf98c0eebc93c584f2e53f9"
+    },
+    {
+      "batch": "T02",
+      "path": "research/artifacts/candidates/opg500-a01-transport-t02/manifest.json",
+      "sha256": "76578dfb97be0e5515226aeaf7705a5c7549aa2ca62ca46ccc2ab0fa88995e1d",
+      "originals": 19,
+      "pr": 17,
+      "head": "99e82bd15fbd46376c650d1b2ec8e3c2d7153f5e",
+      "merge": "2e526938f1ee2e79d39a29405a55e09ef17c7686"
+    },
+    {
+      "batch": "T03",
+      "path": "research/artifacts/candidates/opg500-a01-transport-t03/manifest.json",
+      "sha256": "a3f06f232923b52aed6baa264d52b871a3a268c483c72ca4792c64fa1a0d89b6",
+      "originals": 29,
+      "status_at_creation": "pending_pr_gate"
+    }
+  ],
+  "disposition_map_sha256": "d3518533c4033cab3f37e11dcf4ed99ad8bb84c9b26915a10a8f95bcac7e5536",
+  "additional_historical_delivery": {
+    "path": "research/artifacts/candidates/opg500-a01-transport-t03/delivery.json",
+    "bytes": 636,
+    "sha256": "263bf7dd44ed9eb8528fec4f5f7b031fb25dc26a003c367a1b6d77a87bf90c64",
+    "disposition": "preserved_original_bytes"
+  },
+  "wrapper_dispositions": [
+    {
+      "name": "opg500-root-candidate-checkpoint.zip",
+      "sha256": "bae5f208fe635734e22b0d4f294d12521c86622d7cf75a075c8931a9a8d76abf",
+      "disposition": "not_uploaded_duplicate_packaging",
+      "reason": "All member content is mapped in batch manifests, or the patch duplicates supplement member files."
+    },
+    {
+      "name": "opg500-eight-vertex-counterexample-candidate.zip",
+      "sha256": "71dcb1672f629add141e7044bd4e01ff578c65c2afc5a38fd74d3ec8f7628b03",
+      "disposition": "not_uploaded_duplicate_packaging",
+      "reason": "All member content is mapped in batch manifests, or the patch duplicates supplement member files."
+    },
+    {
+      "name": "opg500-resume-resolution-v1.zip",
+      "sha256": "fa6529212f25784dd5afa42bad4b7123328228ddf320c7925b869b568e64b426",
+      "disposition": "not_uploaded_duplicate_packaging",
+      "reason": "All member content is mapped in batch manifests, or the patch duplicates supplement member files."
+    },
+    {
+      "name": "opg500-resume-resolution-v1.patch",
+      "sha256": "0f4519fc4bd89b2e1163004ca1d30da5ba8de51813a784e725a2b91551a33324",
+      "disposition": "not_uploaded_duplicate_packaging",
+      "reason": "All member content is mapped in batch manifests, or the patch duplicates supplement member files."
+    }
+  ],
+  "preview_disposition": "Not uploaded: presentation-only image; underlying mathematical artifacts are mapped.",
+  "separately_attached_member_copies": "Deduplicated by original path and SHA-256 against the 64-entry map; not additional artifacts.",
+  "T02_association_note": "Coordinator-merged PR17 at the listed head is the binding. Its historical packet PR fields remain null; the completed batch is not rewritten or retransmitted.",
+  "smoke_exception": {
+    "branch": "web/attempt-web-20260906-opg500-a01-transport-smoke",
+    "pr": 2,
+    "disposition": "retained_closed_unmerged_nonmathematical_smoke_not_pending_candidate"
+  },
+  "final_status_locator": "Issue #3 final transport checkpoint after final fresh-read; no completion is asserted by this pre-merge metadata."
+}
