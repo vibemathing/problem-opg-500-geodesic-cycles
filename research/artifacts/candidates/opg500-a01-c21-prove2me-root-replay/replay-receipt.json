@@ -1,0 +1,173 @@
+{
+  "schema": "vibemathing.r05.prove2me-independent-replay.v1",
+  "created_at": "2026-09-08T14:32:38.375875+00:00",
+  "platform": {
+    "version": "0.9.8",
+    "root_theorem_id": "5c4997cd-9945-4028-b853-4ad91c324535",
+    "root_status": "Proved",
+    "root_submission_id": "ed7c185a-9a49-4ded-90af-24839db25038",
+    "root_submission_status": "ACCEPTED",
+    "root_submission_updated_at": "2026-09-08T12:18:26.789175+00:00",
+    "open_leaves": 0
+  },
+  "environment": {
+    "lean_version": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "lake_version": "5.0.0-src+819816b",
+    "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "definitions": [
+    {
+      "theorem_id": "3ea211fc-47d0-4738-88b2-a9adf0c59e02",
+      "module": "Definitions.Def_opg500_weighted_cycle_models",
+      "server_normalized_sha256": "c9137b19120924494ad6b0f39c0c6c1b412dde5c766671f90fe376d2101779e8",
+      "local_normalized_exact": true
+    },
+    {
+      "theorem_id": "3364753c-d40b-447f-adee-420e64289ce1",
+      "module": "Definitions.Def_opg500_eight_vertex_graph",
+      "server_normalized_sha256": "bfb48b8ae67d67f36dbba1f84fde69d3c7e092b793773a45b90172f60162151c",
+      "local_normalized_exact": true
+    }
+  ],
+  "modules": [
+    {
+      "label": "graph_structure",
+      "canonical_name": "OPG500Counterexample.eight_vertex_graph_structure",
+      "theorem_id": "e22fbdd7-a649-4c23-a6c8-e342a48654b8",
+      "submission_id": "c892327a-4939-4c55-bac2-b213b018951a",
+      "accepted_source_sha256": "9a1b4a9b342bc9d5fa8bbf9c83e8dafe1e71f00418e8571b8e4571d733dccfe6",
+      "accepted_source_bytes": 6167,
+      "replay_source_path": "Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean",
+      "replay_source_sha256": "42907175bc1fa290eb961f92f225c62d321d4f762e3f78da3ed1795318acecc5",
+      "forbidden_token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "unsafe": 0
+      },
+      "build_exit_code": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "build_log_sha256": "9507ce04924be9eb5bf91fc9446dcce16b201740adf5866f76f767d2343970d7"
+    },
+    {
+      "label": "tight_edge_metric_bridge",
+      "canonical_name": "OPG500Counterexample.tight_edge_metric_bridge",
+      "theorem_id": "4503a61e-002b-49af-a59d-b8a3dd458134",
+      "submission_id": "023791eb-2d6a-4431-94a5-eb20f83ade53",
+      "accepted_source_sha256": "3dfafd85a5463157cbb5d3c0119575492a96106881addbb5d5a1c87cd5062730",
+      "accepted_source_bytes": 11968,
+      "replay_source_path": "Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean",
+      "replay_source_sha256": "a024e2d746dd0a91f42091cfacb79a70a22020877116f3dd4b806a9a26afff4e",
+      "forbidden_token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "unsafe": 0
+      },
+      "build_exit_code": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "build_log_sha256": "280fb1b9b0ce6ba5bdd4d8d3edb346e90d49bea4e06373b2640ccf0c938208c6"
+    },
+    {
+      "label": "core_link_rank_gap",
+      "canonical_name": "OPG500Counterexample.core_link_rank_gap",
+      "theorem_id": "da116936-f943-4b93-b275-8792b58d28eb",
+      "submission_id": "46b944c5-57a9-47d7-aa06-558a77981d2f",
+      "accepted_source_sha256": "a59326c828b3e0a3a4c7e7f0d01b03b8b90b1cc671461827eb0eb2eee10de1cd",
+      "accepted_source_bytes": 18799,
+      "replay_source_path": "Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean",
+      "replay_source_sha256": "dbb756fc5f5d631d9f319242ea455ce60b386e24941eb51bacd41ba7c5d82f31",
+      "forbidden_token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "unsafe": 0
+      },
+      "build_exit_code": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "build_log_sha256": "3b247ca2b087635ed2b2c70fc48d18611333daa50af7d2e0bc8275b76df775cb"
+    },
+    {
+      "label": "finite_geodesic_cycles_generate",
+      "canonical_name": "OPG500Counterexample.finite_geodesic_cycles_generate",
+      "theorem_id": "0385a44b-4a8e-417b-ada5-ad91a861e223",
+      "submission_id": "9410926b-2a1e-4b76-b5f8-82a3b5af2412",
+      "accepted_source_sha256": "bf546650c648d24024621ca4a930f6d7ef03f820437eec9b2948bac8638a4875",
+      "accepted_source_bytes": 23361,
+      "replay_source_path": "Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean",
+      "replay_source_sha256": "a05723d9bf035c13cf1f228a795cf71e866870c9c996240f0a778d08ef0acb76",
+      "forbidden_token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "unsafe": 0
+      },
+      "build_exit_code": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "build_log_sha256": "632ece84419e33b449b6e11591c45b3a20f3c64fe64e62b408601d2093daa99e"
+    },
+    {
+      "label": "root",
+      "canonical_name": "OPG500Counterexample.eight_vertex_counterexample",
+      "theorem_id": "5c4997cd-9945-4028-b853-4ad91c324535",
+      "submission_id": "ed7c185a-9a49-4ded-90af-24839db25038",
+      "accepted_source_sha256": "30088256cdd8ed371c2d65d68688d4db7598be598ba401d3ac1a9d60d07267f6",
+      "accepted_source_bytes": 47166,
+      "replay_source_path": "Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean",
+      "replay_source_sha256": "f70767b732b7b97cff3acafeacb862441a77dc2076821ed7ff3493733a21279e",
+      "forbidden_token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "unsafe": 0
+      },
+      "build_exit_code": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "build_log_sha256": "e2c9886f2f01595d0ef4f1928458d048363b149068312ce66b56162abf48d507"
+    }
+  ],
+  "root_build": {
+    "command": "lake build Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample",
+    "exit_code": 0,
+    "wall_seconds": 21.41,
+    "max_rss_kbytes": 7956600,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "statement_faithfulness": {
+    "platform_readback_present": true,
+    "platform_confirm_audits": 2,
+    "quantifier_scope": "all strictly positive real edge weights",
+    "ties_included": true,
+    "fixed_graph_edge_count": 18,
+    "conclusion": "exists vertex-geodesic nonperipheral cycle",
+    "original_problem_consequence": "negative answer"
+  },
+  "verdict": "independent_local_replay_passed",
+  "mathematical_root_status": "formally_proved",
+  "local_repository_admission_status": "pending_governed_ingestion"
+}

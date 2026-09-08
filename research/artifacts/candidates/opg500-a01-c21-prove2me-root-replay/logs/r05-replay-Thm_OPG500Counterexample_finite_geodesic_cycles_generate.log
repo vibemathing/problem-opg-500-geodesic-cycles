@@ -1,0 +1,101 @@
+⚠ [8707/8707] Built Theorems.Thm_OPG500Counterexample_finite_geodesic_cycles_generate (3.6s)
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:34:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.wt_of_mem`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:39:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.wt_nonneg`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:124:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:159:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.mem_vertexSet_iff`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:162:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.edgeSet_subset_iff`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:166:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.Cycle.reachable`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:172:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.mem_tail_support`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:180:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.edges_of_length_one`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:214:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.exists_bad_of_not_geodesic`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:221:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.not_bad_iff`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:298:44: Variable name `hpos` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hpos
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:441:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:442:10: `IsIrrefl` has been deprecated: Use `Std.Irrefl` instead
+
+Note: The updated constant has a different type:
+  {α : Sort u} → (α → α → Prop) → Prop
+instead of
+  (α : Sort u_1) → (α → α → Prop) → Prop
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:442:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:550:0: 'OPG500Counterexample.finite_geodesic_cycles_generate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8707 jobs).
