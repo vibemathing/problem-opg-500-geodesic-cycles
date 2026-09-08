@@ -1,0 +1,435 @@
+⚠ [3029/3049] Replayed Theorems.Thm_OPG500Counterexample_tight_edge_metric_bridge
+warning: Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean:85:26: Variable name `hpos` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hpos
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean:225:19: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean:290:0: 'OPG500Counterexample.tight_edge_metric_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3031/3049] Replayed Theorems.Thm_OPG500Counterexample_eight_vertex_graph_structure
+info: Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean:146:0: 'OPG500Counterexample.eight_vertex_graph_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8710/8712] Replayed Theorems.Thm_OPG500Counterexample_core_link_rank_gap
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:169:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:206:69: This simp argument is unused:
+  huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Ne.symm huv] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:215:53: This simp argument is unused:
+  Sym2.eq_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:218:53: This simp argument is unused:
+  Sym2.eq_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:221:53: This simp argument is unused:
+  Sym2.eq_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:237:22: This simp argument is unused:
+  huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huw, hvw, Ne.symm huv, Ne.symm huw, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:237:37: This simp argument is unused:
+  Ne.symm huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huw, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:237:50: This simp argument is unused:
+  Ne.symm huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:237:63: This simp argument is unused:
+  Ne.symm hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm huw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:244:23: This simp argument is unused:
+  huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huw, hvw, Ne.symm huv, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:244:33: This simp argument is unused:
+  hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, Ne.symm huv, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:244:38: This simp argument is unused:
+  Ne.symm huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:244:51: This simp argument is unused:
+  Ne.symm huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:244:64: This simp argument is unused:
+  Ne.symm hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm huw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:246:53: This simp argument is unused:
+  Sym2.eq_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:262:27: This simp argument is unused:
+  huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, hvw, Ne.symm huv, Ne.symm huw, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:262:32: This simp argument is unused:
+  hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, Ne.symm huv, Ne.symm huw, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:262:37: This simp argument is unused:
+  Ne.symm huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huw, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:262:50: This simp argument is unused:
+  Ne.symm huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:269:28: This simp argument is unused:
+  huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, hvw, Ne.symm huv, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:269:33: This simp argument is unused:
+  hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, Ne.symm huv, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:269:38: This simp argument is unused:
+  Ne.symm huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:269:51: This simp argument is unused:
+  Ne.symm huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:269:64: This simp argument is unused:
+  Ne.symm hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm huw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:284:22: This simp argument is unused:
+  huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huw, hvw, Ne.symm huv, Ne.symm huw, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:284:27: This simp argument is unused:
+  huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, hvw, Ne.symm huv, Ne.symm huw, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:284:32: This simp argument is unused:
+  hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, Ne.symm huv, Ne.symm huw, Ne.symm hvw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:284:63: This simp argument is unused:
+  Ne.symm hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm huw]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:291:23: This simp argument is unused:
+  huv
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huw, hvw, Ne.symm huv, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:291:28: This simp argument is unused:
+  huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, hvw, Ne.symm huv, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:291:33: This simp argument is unused:
+  hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, Ne.symm huv, Ne.symm huw, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:291:51: This simp argument is unused:
+  Ne.symm huw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm hvw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:291:64: This simp argument is unused:
+  Ne.symm hvw
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [huv, huw, hvw, Ne.symm huv, Ne.symm huw] at hab
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:384:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:417:5: Variable name `htriangleFree` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _htriangleFree
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:427:0: 'OPG500Counterexample.core_link_rank_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8711/8712] Replayed Theorems.Thm_OPG500Counterexample_finite_geodesic_cycles_generate
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:34:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.wt_of_mem`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:39:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.wt_nonneg`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:124:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:159:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.mem_vertexSet_iff`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:162:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.edgeSet_subset_iff`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:166:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.Cycle.reachable`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:172:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.mem_tail_support`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:180:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.edges_of_length_one`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:214:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.exists_bad_of_not_geodesic`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:221:0: automatically included section variable(s) unused in theorem `OPG500Counterexample.not_bad_iff`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:298:44: Variable name `hpos` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hpos
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:441:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:442:10: `IsIrrefl` has been deprecated: Use `Std.Irrefl` instead
+
+Note: The updated constant has a different type:
+  {α : Sort u} → (α → α → Prop) → Prop
+instead of
+  (α : Sort u_1) → (α → α → Prop) → Prop
+warning: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:442:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+info: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:550:0: 'OPG500Counterexample.finite_geodesic_cycles_generate' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8712/8712] Built Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample (18s)
+warning: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:106:26: Variable name `hpos` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hpos
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:533:41: This simp argument is unused:
+  hab.ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SimpleGraph.Walk.isPath_def, hbc.ne, hca.ne, Ne.symm hab.ne, Ne.symm hbc.ne, Ne.symm hca.ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:534:8: This simp argument is unused:
+  Ne.symm hbc.ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SimpleGraph.Walk.isPath_def, hab.ne, hbc.ne, hca.ne, Ne.symm hab.ne, Ne.symm hca.ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:534:24: This simp argument is unused:
+  Ne.symm hca.ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [SimpleGraph.Walk.isPath_def, hab.ne, hbc.ne, hca.ne, Ne.symm hab.ne, Ne.symm hbc.ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:696:2: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:734:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:915:0: automatically included section variable(s) unused in theorem `OPG500Assembly.exists_pivot_cycle`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:1051:0: automatically included section variable(s) unused in theorem `OPG500Assembly.cycleList_mem_submodule`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+info: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:1113:0: 'OPG500Counterexample.eight_vertex_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8712 jobs).
+	Command being timed: "lake build Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample"
+	User time (seconds): 31.76
+	System time (seconds): 2.76
+	Percent of CPU this job got: 161%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:21.41
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7956600
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 19
+	Minor (reclaiming a frame) page faults: 419201
+	Voluntary context switches: 101395
+	Involuntary context switches: 188
+	Swaps: 0
+	File system inputs: 1576
+	File system outputs: 18072
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

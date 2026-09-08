@@ -1,0 +1,15 @@
+⚠ [1043/1043] Built Theorems.Thm_OPG500Counterexample_tight_edge_metric_bridge (959ms)
+warning: Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean:85:26: Variable name `hpos` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hpos
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean:225:19: Variable name `h` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean:290:0: 'OPG500Counterexample.tight_edge_metric_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1043 jobs).

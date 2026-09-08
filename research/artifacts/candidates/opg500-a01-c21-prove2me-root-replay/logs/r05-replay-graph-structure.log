@@ -1,0 +1,3 @@
+ℹ [1045/1045] Built Theorems.Thm_OPG500Counterexample_eight_vertex_graph_structure (3.4s)
+info: Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean:146:0: 'OPG500Counterexample.eight_vertex_graph_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1045 jobs).

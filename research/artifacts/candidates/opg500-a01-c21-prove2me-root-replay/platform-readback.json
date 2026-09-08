@@ -1,0 +1,32 @@
+{
+  "schema": "vibemathing.prove2me-root-readback.v1",
+  "checked_at": "2026-09-08T14:51:30.806117+00:00",
+  "platform": {
+    "name": "Prove2Me",
+    "version": "0.9.8",
+    "mission_id": "b72b3a1f-71d5-4490-b5fc-854f39ae8beb",
+    "mission_visibility": "public",
+    "proposal_status": "Reviewed",
+    "milestones_total": 6,
+    "milestones_completed": 6
+  },
+  "root": {
+    "theorem_id": "5c4997cd-9945-4028-b853-4ad91c324535",
+    "theorem_name": "OPG500Counterexample.eight_vertex_counterexample",
+    "status": "Proved",
+    "accepted_submission_id": "ed7c185a-9a49-4ded-90af-24839db25038",
+    "accepted_submission_status": "ACCEPTED",
+    "accepted_submission_updated_at": "2026-09-08T12:18:26.789175+00:00",
+    "open_leaves": 0
+  },
+  "accepted_root_source": {
+    "bytes": 47166,
+    "sha256": "30088256cdd8ed371c2d65d68688d4db7598be598ba401d3ac1a9d60d07267f6"
+  },
+  "access_boundary": {
+    "public_mission_url": "https://prove2.me/missions/b72b3a1f-71d5-4490-b5fc-854f39ae8beb",
+    "api_requires_authentication": true,
+    "accepted_sources_republished_in_this_bundle": true
+  },
+  "repository_admission": "pending"
+}

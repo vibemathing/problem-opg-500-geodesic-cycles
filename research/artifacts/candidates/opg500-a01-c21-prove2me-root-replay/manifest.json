@@ -1,0 +1,132 @@
+{
+  "accepted_submission_id": "ed7c185a-9a49-4ded-90af-24839db25038",
+  "base_revision": "df9fb18cf6d4f3e4836bbb6e86be77995abcdcf5",
+  "file_count": 24,
+  "files": [
+    {
+      "bytes": 3686,
+      "path": "README.md",
+      "sha256": "d2e7d9ccd168615ac9abb28f2854aa737ccf963b4e6581a3e481e73ecc882d56"
+    },
+    {
+      "bytes": 18799,
+      "path": "accepted/core_link_rank_gap.lean",
+      "sha256": "a59326c828b3e0a3a4c7e7f0d01b03b8b90b1cc671461827eb0eb2eee10de1cd"
+    },
+    {
+      "bytes": 23361,
+      "path": "accepted/finite_geodesic_cycles_generate.lean",
+      "sha256": "bf546650c648d24024621ca4a930f6d7ef03f820437eec9b2948bac8638a4875"
+    },
+    {
+      "bytes": 6167,
+      "path": "accepted/graph_structure.lean",
+      "sha256": "9a1b4a9b342bc9d5fa8bbf9c83e8dafe1e71f00418e8571b8e4571d733dccfe6"
+    },
+    {
+      "bytes": 47166,
+      "path": "accepted/root.lean",
+      "sha256": "30088256cdd8ed371c2d65d68688d4db7598be598ba401d3ac1a9d60d07267f6"
+    },
+    {
+      "bytes": 11968,
+      "path": "accepted/tight_edge_metric_bridge.lean",
+      "sha256": "3dfafd85a5463157cbb5d3c0119575492a96106881addbb5d5a1c87cd5062730"
+    },
+    {
+      "bytes": 10992,
+      "path": "logs/r05-replay-Thm_OPG500Counterexample_core_link_rank_gap.log",
+      "sha256": "3b247ca2b087635ed2b2c70fc48d18611333daa50af7d2e0bc8275b76df775cb"
+    },
+    {
+      "bytes": 6419,
+      "path": "logs/r05-replay-Thm_OPG500Counterexample_finite_geodesic_cycles_generate.log",
+      "sha256": "632ece84419e33b449b6e11591c45b3a20f3c64fe64e62b408601d2093daa99e"
+    },
+    {
+      "bytes": 1060,
+      "path": "logs/r05-replay-Thm_OPG500Counterexample_tight_edge_metric_bridge.log",
+      "sha256": "280fb1b9b0ce6ba5bdd4d8d3edb346e90d49bea4e06373b2640ccf0c938208c6"
+    },
+    {
+      "bytes": 326,
+      "path": "logs/r05-replay-graph-structure.log",
+      "sha256": "9507ce04924be9eb5bf91fc9446dcce16b201740adf5866f76f767d2343970d7"
+    },
+    {
+      "bytes": 22486,
+      "path": "logs/r05-replay-root.log",
+      "sha256": "e2c9886f2f01595d0ef4f1928458d048363b149068312ce66b56162abf48d507"
+    },
+    {
+      "bytes": 1134,
+      "path": "platform-readback.json",
+      "sha256": "4d8d769ec86c85072c8860258c82709c23489d7e0a5158af03febbeb79f17157"
+    },
+    {
+      "bytes": 1040,
+      "path": "replay/Definitions/Def_opg500_eight_vertex_graph.lean",
+      "sha256": "97d6776f4575b80995cd2a8f66078db03e52fb6d092680cb31dc8ed9cc54a717"
+    },
+    {
+      "bytes": 3087,
+      "path": "replay/Definitions/Def_opg500_weighted_cycle_models.lean",
+      "sha256": "dad1aeb2bfcc9d6eeb0c2cb884574c914a7c5c68fef7cccff6a2cd8d996b166a"
+    },
+    {
+      "bytes": 18885,
+      "path": "replay/Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean",
+      "sha256": "dbb756fc5f5d631d9f319242ea455ce60b386e24941eb51bacd41ba7c5d82f31"
+    },
+    {
+      "bytes": 47270,
+      "path": "replay/Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean",
+      "sha256": "f70767b732b7b97cff3acafeacb862441a77dc2076821ed7ff3493733a21279e"
+    },
+    {
+      "bytes": 6249,
+      "path": "replay/Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean",
+      "sha256": "42907175bc1fa290eb961f92f225c62d321d4f762e3f78da3ed1795318acecc5"
+    },
+    {
+      "bytes": 23473,
+      "path": "replay/Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean",
+      "sha256": "a05723d9bf035c13cf1f228a795cf71e866870c9c996240f0a778d08ef0acb76"
+    },
+    {
+      "bytes": 12066,
+      "path": "replay/Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean",
+      "sha256": "a024e2d746dd0a91f42091cfacb79a70a22020877116f3dd4b806a9a26afff4e"
+    },
+    {
+      "bytes": 3159,
+      "path": "replay/lake-manifest.json",
+      "sha256": "dc8f4ad3ee254ef3ec1a3f7c137c87e5bb22c25d951d477c6e80f2da81e17787"
+    },
+    {
+      "bytes": 338,
+      "path": "replay/lakefile.lean",
+      "sha256": "01e6f097b3a5771d27dcc6672f2bc9944fdae12fe4cc068370ea4e02960021b4"
+    },
+    {
+      "bytes": 25,
+      "path": "replay/lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    },
+    {
+      "bytes": 6657,
+      "path": "replay-receipt.json",
+      "sha256": "d9581521fef7da52ddf2629ba5b4244df545dca263e0b89462e3ac566eb35179"
+    },
+    {
+      "bytes": 3695,
+      "path": "statement-faithfulness.md",
+      "sha256": "e417b259fbb2cd3bd6e6a0de8b50a00db83f626c14bf3ab11843296472f0a6e3"
+    }
+  ],
+  "mathlib_rev": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "root_theorem_id": "5c4997cd-9945-4028-b853-4ad91c324535",
+  "schema": "vibemathing.opg500-prove2me-publication-manifest.v1",
+  "status": "candidate_only",
+  "total_bytes": 279508
+}
