@@ -1,0 +1,17 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+OAVGJB+LMRoman17-Regular-Identity-H  CID Type 0C       Identity-H       yes yes yes      4  0
+VUURPL+NotoSerifCJKjp-Regular-Identity-H CID Type 0C       Identity-H       yes yes yes      6  0
+IRAOIH+LMRoman12-Regular-Identity-H  CID Type 0C       Identity-H       yes yes yes      8  0
+ZKZHFJ+LMRoman10-Bold-Identity-H     CID Type 0C       Identity-H       yes yes yes     10  0
+EJYJIP+NotoSerifCJKjp-Bold-Identity-H CID Type 0C       Identity-H       yes yes yes     12  0
+JKQZAP+LMRoman12-Bold-Identity-H     CID Type 0C       Identity-H       yes yes yes     14  0
+DUHXHO+LMRoman10-Regular-Identity-H  CID Type 0C       Identity-H       yes yes yes     16  0
+YIPKAT+CMMI10                        Type 1C           Builtin          yes yes yes     18  0
+UNBVHL+CMR10                         Type 1C           Builtin          yes yes yes     19  0
+ZHNDDA+CMSY10                        Type 1C           Builtin          yes yes yes     20  0
+FONDNK+MSBM10                        Type 1C           Builtin          yes yes yes     21  0
+ZDBHTL+CMMI8                         Type 1C           Builtin          yes yes yes     22  0
+VCMOVX+CMR8                          Type 1C           Builtin          yes yes yes     23  0
+IJHDBZ+CMEX10                        Type 1C           Builtin          yes yes yes     24  0
+NEODFG+LMMono10-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes     29  0

@@ -1,0 +1,216 @@
+{
+  "allowed_standard_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "dependency_boundary": {
+    "external_dependency": "Mathlib",
+    "lean_version": "4.33.1",
+    "local_modules": [
+      "Definitions.*",
+      "Theorems.*"
+    ],
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "note": "A source scan is distinct from elaboration and from repository verifier admission."
+  },
+  "files": [
+    {
+      "collection": "accepted",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "core_link_rank_gap.lean",
+      "sha256": "a59326c828b3e0a3a4c7e7f0d01b03b8b90b1cc671461827eb0eb2eee10de1cd"
+    },
+    {
+      "collection": "accepted",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "finite_geodesic_cycles_generate.lean",
+      "sha256": "bf546650c648d24024621ca4a930f6d7ef03f820437eec9b2948bac8638a4875"
+    },
+    {
+      "collection": "accepted",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "graph_structure.lean",
+      "sha256": "9a1b4a9b342bc9d5fa8bbf9c83e8dafe1e71f00418e8571b8e4571d733dccfe6"
+    },
+    {
+      "collection": "accepted",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "root.lean",
+      "sha256": "30088256cdd8ed371c2d65d68688d4db7598be598ba401d3ac1a9d60d07267f6"
+    },
+    {
+      "collection": "accepted",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "tight_edge_metric_bridge.lean",
+      "sha256": "3dfafd85a5463157cbb5d3c0119575492a96106881addbb5d5a1c87cd5062730"
+    },
+    {
+      "collection": "replay",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "Definitions/Def_opg500_eight_vertex_graph.lean",
+      "sha256": "97d6776f4575b80995cd2a8f66078db03e52fb6d092680cb31dc8ed9cc54a717"
+    },
+    {
+      "collection": "replay",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "Definitions/Def_opg500_weighted_cycle_models.lean",
+      "sha256": "dad1aeb2bfcc9d6eeb0c2cb884574c914a7c5c68fef7cccff6a2cd8d996b166a"
+    },
+    {
+      "collection": "replay",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean",
+      "sha256": "dbb756fc5f5d631d9f319242ea455ce60b386e24941eb51bacd41ba7c5d82f31"
+    },
+    {
+      "collection": "replay",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean",
+      "sha256": "f70767b732b7b97cff3acafeacb862441a77dc2076821ed7ff3493733a21279e"
+    },
+    {
+      "collection": "replay",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean",
+      "sha256": "42907175bc1fa290eb961f92f225c62d321d4f762e3f78da3ed1795318acecc5"
+    },
+    {
+      "collection": "replay",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean",
+      "sha256": "a05723d9bf035c13cf1f228a795cf71e866870c9c996240f0a778d08ef0acb76"
+    },
+    {
+      "collection": "replay",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean",
+      "sha256": "a024e2d746dd0a91f42091cfacb79a70a22020877116f3dd4b806a9a26afff4e"
+    },
+    {
+      "collection": "replay",
+      "counts": {
+        "admit": 0,
+        "axiom_declaration": 0,
+        "extern_declaration": 0,
+        "implemented_by": 0,
+        "opaque_declaration": 0,
+        "sorry": 0,
+        "unsafe_declaration": 0
+      },
+      "path": "lakefile.lean",
+      "sha256": "01e6f097b3a5771d27dcc6672f2bc9944fdae12fe4cc068370ea4e02960021b4"
+    }
+  ],
+  "generated_at": "2026-09-09T03:08:56Z",
+  "interpretation": "No scanned source-level placeholder or custom escape declaration was found. Successful exact-toolchain elaboration and #print axioms are recorded separately.",
+  "scanner": "Nested-comment/string-aware lexical scan; declaration keywords anchored to line starts.",
+  "schema": "opg500.escape-audit.v1",
+  "scope": "All five accepted Lean sources, all seven replay definition/theorem sources, and the replay lakefile.",
+  "status": "source_scan_passed",
+  "totals": {
+    "admit": 0,
+    "axiom_declaration": 0,
+    "extern_declaration": 0,
+    "implemented_by": 0,
+    "opaque_declaration": 0,
+    "sorry": 0,
+    "unsafe_declaration": 0
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "created_at": "2026-09-09T03:08:56Z",
+  "distinctions": {
+    "elaboration": "passed",
+    "platform_acceptance": "read back from frozen public receipt",
+    "source_scan": "passed",
+    "trusted_repository_verifier_admission": "pending"
+  },
+  "execution_scope": "Clean publication source tree; exact-pinned package cache copied before execution and commit-checked; no moving-main source substituted.",
+  "module_runs": [
+    {
+      "axiom_reports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.core_link_rank_gap"
+        }
+      ],
+      "command": [
+        "timeout",
+        "--signal=TERM",
+        "--kill-after=15s",
+        "240s",
+        "lake",
+        "build",
+        "Theorems.Thm_OPG500Counterexample_core_link_rank_gap"
+      ],
+      "exit_code": 0,
+      "log": "formal/logs/Theorems.Thm_OPG500Counterexample_core_link_rank_gap.log",
+      "log_sha256": "93b10688c00b426c9c900872f19437bba1996e77a613c3fb1b09b2f526af96cd",
+      "max_rss_kbytes": 6830448,
+      "module": "Theorems.Thm_OPG500Counterexample_core_link_rank_gap",
+      "wall_clock": "0:08.55"
+    },
+    {
+      "axiom_reports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.tight_edge_metric_bridge"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.eight_vertex_graph_structure"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.core_link_rank_gap"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.finite_geodesic_cycles_generate"
+        },
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.eight_vertex_counterexample"
+        }
+      ],
+      "command": [
+        "timeout",
+        "--signal=TERM",
+        "--kill-after=15s",
+        "240s",
+        "lake",
+        "build",
+        "Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample"
+      ],
+      "exit_code": 0,
+      "log": "formal/logs/Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample.log",
+      "log_sha256": "4dabccc68fb87f42a3d2283bbbab37c6cce9a9a172f0596f3804f156748a70b4",
+      "max_rss_kbytes": 8209728,
+      "module": "Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample",
+      "wall_clock": "0:23.37"
+    },
+    {
+      "axiom_reports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.eight_vertex_graph_structure"
+        }
+      ],
+      "command": [
+        "timeout",
+        "--signal=TERM",
+        "--kill-after=15s",
+        "240s",
+        "lake",
+        "build",
+        "Theorems.Thm_OPG500Counterexample_eight_vertex_graph_structure"
+      ],
+      "exit_code": 0,
+      "log": "formal/logs/Theorems.Thm_OPG500Counterexample_eight_vertex_graph_structure.log",
+      "log_sha256": "eb2d43bd0abc9d44a7eb64d0b092be02271551618a0c2137e7485cd0a570a0bc",
+      "max_rss_kbytes": 2187644,
+      "module": "Theorems.Thm_OPG500Counterexample_eight_vertex_graph_structure",
+      "wall_clock": "0:09.76"
+    },
+    {
+      "axiom_reports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.finite_geodesic_cycles_generate"
+        }
+      ],
+      "command": [
+        "timeout",
+        "--signal=TERM",
+        "--kill-after=15s",
+        "240s",
+        "lake",
+        "build",
+        "Theorems.Thm_OPG500Counterexample_finite_geodesic_cycles_generate"
+      ],
+      "exit_code": 0,
+      "log": "formal/logs/Theorems.Thm_OPG500Counterexample_finite_geodesic_cycles_generate.log",
+      "log_sha256": "604b1f170f1f353579c9f0dad92b9e7c0e604220a72734aa2fe94afa3e7ee625",
+      "max_rss_kbytes": 6834988,
+      "module": "Theorems.Thm_OPG500Counterexample_finite_geodesic_cycles_generate",
+      "wall_clock": "0:07.10"
+    },
+    {
+      "axiom_reports": [
+        {
+          "axioms": [
+            "propext",
+            "Classical.choice",
+            "Quot.sound"
+          ],
+          "declaration": "OPG500Counterexample.tight_edge_metric_bridge"
+        }
+      ],
+      "command": [
+        "timeout",
+        "--signal=TERM",
+        "--kill-after=15s",
+        "240s",
+        "lake",
+        "build",
+        "Theorems.Thm_OPG500Counterexample_tight_edge_metric_bridge"
+      ],
+      "exit_code": 0,
+      "log": "formal/logs/Theorems.Thm_OPG500Counterexample_tight_edge_metric_bridge.log",
+      "log_sha256": "f2b3a4c67c6459ec8ede95066f8770a22c6084719617323706c5c209af3229f5",
+      "max_rss_kbytes": 1874460,
+      "module": "Theorems.Thm_OPG500Counterexample_tight_edge_metric_bridge",
+      "wall_clock": "0:01.53"
+    }
+  ],
+  "package_commits": {
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+  },
+  "resource_bounds": {
+    "per_build_timeout_seconds": 240,
+    "timeout_kill_after_seconds": 15
+  },
+  "root": {
+    "accepted_source_sha256": "30088256cdd8ed371c2d65d68688d4db7598be598ba401d3ac1a9d60d07267f6",
+    "accepted_submission_id": "ed7c185a-9a49-4ded-90af-24839db25038",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declaration": "OPG500Counterexample.eight_vertex_counterexample",
+    "replay_source_sha256": "f70767b732b7b97cff3acafeacb862441a77dc2076821ed7ff3493733a21279e"
+  },
+  "schema": "opg500.publication-replay-receipt.v1",
+  "source_inputs": [
+    {
+      "bytes": 1040,
+      "path": "Definitions/Def_opg500_eight_vertex_graph.lean",
+      "sha256": "97d6776f4575b80995cd2a8f66078db03e52fb6d092680cb31dc8ed9cc54a717"
+    },
+    {
+      "bytes": 3087,
+      "path": "Definitions/Def_opg500_weighted_cycle_models.lean",
+      "sha256": "dad1aeb2bfcc9d6eeb0c2cb884574c914a7c5c68fef7cccff6a2cd8d996b166a"
+    },
+    {
+      "bytes": 18885,
+      "path": "Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean",
+      "sha256": "dbb756fc5f5d631d9f319242ea455ce60b386e24941eb51bacd41ba7c5d82f31"
+    },
+    {
+      "bytes": 47270,
+      "path": "Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean",
+      "sha256": "f70767b732b7b97cff3acafeacb862441a77dc2076821ed7ff3493733a21279e"
+    },
+    {
+      "bytes": 6249,
+      "path": "Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean",
+      "sha256": "42907175bc1fa290eb961f92f225c62d321d4f762e3f78da3ed1795318acecc5"
+    },
+    {
+      "bytes": 23473,
+      "path": "Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean",
+      "sha256": "a05723d9bf035c13cf1f228a795cf71e866870c9c996240f0a778d08ef0acb76"
+    },
+    {
+      "bytes": 12066,
+      "path": "Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean",
+      "sha256": "a024e2d746dd0a91f42091cfacb79a70a22020877116f3dd4b806a9a26afff4e"
+    },
+    {
+      "bytes": 3159,
+      "path": "lake-manifest.json",
+      "sha256": "dc8f4ad3ee254ef3ec1a3f7c137c87e5bb22c25d951d477c6e80f2da81e17787"
+    },
+    {
+      "bytes": 338,
+      "path": "lakefile.lean",
+      "sha256": "01e6f097b3a5771d27dcc6672f2bc9944fdae12fe4cc068370ea4e02960021b4"
+    },
+    {
+      "bytes": 25,
+      "path": "lean-toolchain",
+      "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+    }
+  ],
+  "toolchain": {
+    "lake_version": "5.0.0-src+819816b",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "lean_version": "4.33.1",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "verdict": "exact_toolchain_replay_passed"
+}

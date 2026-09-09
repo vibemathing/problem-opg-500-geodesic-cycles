@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Latin Modern Roman}
+\setCJKmainfont{Noto Serif CJK SC}
+\usepackage{amsmath,amssymb,booktabs,hyperref,xcolor}
+\hypersetup{colorlinks=true,linkcolor=blue!55!black,urlcolor=blue!55!black}
+\title{OPG-500 八顶点反例：技术解读}
+\author{[作者信息待提供]}
+\date{2026年9月9日草稿}
+\begin{document}
+\maketitle
+\begin{center}\textcolor{red!70!black}{\bfseries DRAFT --- NOT YET EXTERNALLY PEER REVIEWED\\草稿——尚未经过外部同行评议}\end{center}
+
+\section{结论与边界}
+存在一个固定的 8 顶点、18 边有限简单 3-连通图 $H$，使得对每一个严格正实数边权 $\ell:E(H)\to\mathbb R_{>0}$，都有一个既测地又非外围的圈。因此，在本文审计的定义下，OPG-500 的全称断言为假。这里不声称八个顶点是最小规模。
+
+根数学命题已有被平台接受的 Lean 证明，并完成了精确工具链复演；公开证据已固定。但仓库级可信 Result 准入和传统外部同行评议是独立且尚未完成的流程。
+
+\section{图与定义}
+顶点集为 $\{0,1,2,3,4,5,6,7\}$，边集为
+\[
+\{01,02,03,04,05,06,12,13,14,15,17,23,24,26,27,35,36,37\}.
+\]
+核心 $\{0,1,2,3\}$ 诱导 $K_4$，其余四点相互不邻接；外点 $4,5,6,7$ 分别缺少与核心点 $3,2,1,0$ 的边。
+
+测地圈要求：圈上任意两顶点间，至少一条圈弧达到全图最短距离。外围圈要求无弦且删除圈顶点后余图连通或为空。并列最短路允许；零权和负权不在定理范围内。
+
+该图的外围圈恰为
+\[
+014,015,024,026,035,036,124,127,135,137,236,237.
+\]
+删去至多两个点后至少留下两个相邻核心点，每个剩余外点都连到其中至少一个，故该图 3-连通。核心三角形删除后会留下孤立外点，因而不是外围圈。
+
+\section{证明路线}
+给定任意正权，称一条边为\emph{紧边}，如果这条单边路就是端点间全局最短路；所有紧边构成跨越子图 $T$。任意最短路的每个子路仍最短，故每条边都紧，$T$ 连通并保留原图最短路。
+
+反设每个测地圈都外围。若一条边非紧，最短替代路与该边构成测地圈；外围圈分类迫使它是三角形，所以替代路恰含两条紧边。
+
+把紧核心记为 $F$，把外点 $a_i=7-i$ 的紧核心邻点集记为 $N_i$。反设使 $F$ 无三角形；否则紧核心三角形测地却不外围。非紧边的两步替代还说明 $N_i$ 在 $F$ 中支配其余可邻核心点。
+
+若 $c_i$ 是 $F[N_i]$ 的连通分支数，有限计数给出
+\[
+7<|E(F)|+\sum_i c_i.
+\]
+因 $F$ 无三角形且 $|N_i|\le3$，每个 $F[N_i]$ 是森林，于是
+\[
+\sum_i|E(F[N_i])|<|E(T)|+1-8.
+\]
+每条 $F[N_i]$ 的边对应一个外点--核心--核心紧三角形；所有可能外围圈向量都在这些三角形生成的子空间 $W$ 中。但连通图 $T$ 的圈空间维数是 $|E(T)|-8+1$，故有圈向量不在 $W$。
+
+正权有限图的测地圈生成整个模 2 圈空间：非测地圈可用最短“坏点对”的最短路分裂成两个严格更短圈，再作有限归纳。因此可选一个不在 $W$ 的测地圈。它映回 $H$ 后仍测地；反设会迫使它外围并落入 $W$，矛盾。
+
+\section{形式化与待办}
+根声明为 \texttt{OPG500Counterexample.eight\_vertex\_counterexample}。复演锁定 Lean 4.33.1 和 Mathlib 提交 \texttt{0df444a360eaa60ab8c11dca51a86af692955474}，五个目标模块退出码均为 0。公理报告是 \texttt{[propext, Classical.choice, Quot.sound]}，不能表述为“无公理”。
+
+仍需作者、单位、ORCID、贡献、许可、AI/工具披露、独立数学审读和可信签署；准入草稿尚未进入 Candidate/Evidence/Result 真相记录。任何 arXiv、期刊、GitHub Release 或宣传发布均需另行授权。
+\end{document}
