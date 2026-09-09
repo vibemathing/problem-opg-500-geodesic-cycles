@@ -1,0 +1,66 @@
+{
+  "boundary_cases": {
+    "cycle_simplicity": "Mathlib Walk.IsCycle",
+    "diagonal_vertex_pair": "included_with_nil_path",
+    "empty_deletion_complement": "accepted",
+    "negative_weights": "excluded",
+    "ties": "included",
+    "zero_weights": "excluded"
+  },
+  "dimensions": [
+    {
+      "formal": "fixed SimpleGraph (Fin 8), proved IsThreeConnected; EdgeWeight H → ℝ",
+      "name": "domain",
+      "source": "finite simple 3-connected graphs with real edge lengths",
+      "verdict": "match"
+    },
+    {
+      "formal": "exists fixed H; forall positive weights; exists geodesic nonperipheral cycle",
+      "name": "quantifiers",
+      "source": "forall G, exists positive weight, forall geodesic cycles peripheral",
+      "verdict": "exact_logical_negation"
+    },
+    {
+      "formal": "forall e, 0 < ℓ e",
+      "name": "positivity",
+      "source": "R^+; canonical contract R_{>0}",
+      "verdict": "match_with_notation_note"
+    },
+    {
+      "formal": "a globally shortest simple path supported in the cycle for each vertex pair",
+      "name": "geodesic",
+      "source": "no path shorter than both cycle arcs",
+      "verdict": "equivalent_in_finite_positive_setting"
+    },
+    {
+      "formal": "chordless and connected-or-empty vertex deletion complement",
+      "name": "peripheral",
+      "source": "induced non-separating cycle",
+      "verdict": "match"
+    },
+    {
+      "formal": "encoded in types and IsThreeConnected",
+      "name": "assumptions",
+      "source": "finite/simple convention and 3-connectivity",
+      "verdict": "match"
+    },
+    {
+      "formal": "one counterexample graph defeating every positive weighting",
+      "name": "polarity",
+      "source": "universal existence question",
+      "verdict": "negative_answer"
+    }
+  ],
+  "formal_declaration": "OPG500Counterexample.eight_vertex_counterexample",
+  "generated_at": "2026-09-09T03:08:56Z",
+  "material_mismatch_found": false,
+  "problem_contract_sha256": "51d8524b7f530bacb73ee5da132109fbd3e54dc441b9ef926fcbcc3abbf8f449",
+  "problem_id": "problem:opg-500-geodesic-cycles",
+  "publication_claim_status": "eligible_for_draft_wording_only",
+  "root_obligation_id": "obligation:opg500-root",
+  "root_statement_sha256": "ab6f891faac82c09c71a1cac0cad55ce0ded258d37159097c2e4488952f5066e",
+  "schema": "opg500.statement-faithfulness-draft.v1",
+  "source": "evidence/statement-faithfulness.md",
+  "status": "draft_pass_pending_trusted_review",
+  "trusted_signature_present": false
+}

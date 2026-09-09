@@ -1,0 +1,76 @@
+{
+  "schema": "opg500.publication-validation.v1",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "required deliverables",
+      "pass": true,
+      "detail": "34/34 present; missing=[]"
+    },
+    {
+      "name": "immutable source manifest",
+      "pass": true,
+      "detail": "40/40 copied input hashes match; task-package payload check=True; bad=[]"
+    },
+    {
+      "name": "source lock anchors",
+      "pass": true,
+      "detail": "revision and four artifact hashes equal the task lock"
+    },
+    {
+      "name": "exact-toolchain replay",
+      "pass": true,
+      "detail": "verdict=exact_toolchain_replay_passed; targets=5"
+    },
+    {
+      "name": "axiom inventory",
+      "pass": true,
+      "detail": "9 target reports; each exactly [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "name": "escape audit",
+      "pass": true,
+      "detail": "{'admit': 0, 'axiom_declaration': 0, 'extern_declaration': 0, 'implemented_by': 0, 'opaque_declaration': 0, 'sorry': 0, 'unsafe_declaration': 0}"
+    },
+    {
+      "name": "declaration DAG",
+      "pass": true,
+      "detail": "reachable declarations=197"
+    },
+    {
+      "name": "admission-draft schemas",
+      "pass": true,
+      "detail": "8/8 valid; errors=[]"
+    },
+    {
+      "name": "fail-closed admission state",
+      "pass": true,
+      "detail": "all three receipts undetermined/incomplete, pending trusted verifier, exit 125"
+    },
+    {
+      "name": "counterexample Result shape",
+      "pass": true,
+      "detail": "kind=counterexample; outcome=refuted; three proposed links"
+    },
+    {
+      "name": "independent graph audit",
+      "pass": true,
+      "detail": "8 vertices; 18 edges; 3-connected; degree sequence 6^4,3^4; 12 listed peripheral triangles"
+    },
+    {
+      "name": "publication PDFs",
+      "pass": true,
+      "detail": "[{'path': 'paper/main.pdf', 'pages': 10, 'embedded_fonts': True, 'ok': True}, {'path': 'paper/figures/counterexample-graph.pdf', 'pages': 1, 'embedded_fonts': True, 'ok': True}, {'path': 'paper-zh/exposition.pdf', 'pages': 2, 'embedded_fonts': True, 'ok': True}]"
+    },
+    {
+      "name": "privacy scan",
+      "pass": true,
+      "detail": "129 text files scanned; findings=[]"
+    },
+    {
+      "name": "symlink boundary",
+      "pass": true,
+      "detail": "escaping symlinks=[]"
+    }
+  ]
+}

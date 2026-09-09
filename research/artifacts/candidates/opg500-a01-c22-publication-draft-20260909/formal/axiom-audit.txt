@@ -1,0 +1,14 @@
+OPG-500 AXIOM AUDIT — exact lines from 2026-09-09 replay
+DRAFT — NOT YET EXTERNALLY PEER REVIEWED
+
+Theorems.Thm_OPG500Counterexample_core_link_rank_gap.log: info: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:427:0: 'OPG500Counterexample.core_link_rank_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample.log: info: Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean:290:0: 'OPG500Counterexample.tight_edge_metric_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample.log: info: Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean:146:0: 'OPG500Counterexample.eight_vertex_graph_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample.log: info: Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean:427:0: 'OPG500Counterexample.core_link_rank_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample.log: info: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:550:0: 'OPG500Counterexample.finite_geodesic_cycles_generate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Theorems.Thm_OPG500Counterexample_eight_vertex_counterexample.log: info: Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean:1113:0: 'OPG500Counterexample.eight_vertex_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+Theorems.Thm_OPG500Counterexample_eight_vertex_graph_structure.log: info: Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean:146:0: 'OPG500Counterexample.eight_vertex_graph_structure' depends on axioms: [propext, Classical.choice, Quot.sound]
+Theorems.Thm_OPG500Counterexample_finite_geodesic_cycles_generate.log: info: Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean:550:0: 'OPG500Counterexample.finite_geodesic_cycles_generate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Theorems.Thm_OPG500Counterexample_tight_edge_metric_bridge.log: info: Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean:290:0: 'OPG500Counterexample.tight_edge_metric_bridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Interpretation: every printed target reports [propext, Classical.choice, Quot.sound]. This is not axiom-free. No additional custom axiom is visible in the target reports. The source escape scan is formal/escape-audit.json; trusted repository admission remains pending.

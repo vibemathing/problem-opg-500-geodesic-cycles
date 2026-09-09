@@ -1,0 +1,154 @@
+{
+  "claims": [
+    {
+      "claim": "The fixed graph H has eight vertices and eighteen edges.",
+      "claim_id": "C01",
+      "evidence": [
+        "inputs/source-readback.md",
+        "review/graph-audit.json",
+        "formal/replay-project/Definitions/Def_opg500_eight_vertex_graph.lean"
+      ],
+      "forbidden_extensions": [
+        "smallest",
+        "minimal"
+      ],
+      "permitted_wording": "the fixed eight-vertex, eighteen-edge graph H",
+      "status": "verified"
+    },
+    {
+      "claim": "H is 3-connected and its peripheral cycles are exactly twelve listed triangles.",
+      "claim_id": "C02",
+      "evidence": [
+        "formal/replay-receipt.json",
+        "review/graph-audit.json"
+      ],
+      "forbidden_extensions": [],
+      "permitted_wording": "the replayed structure theorem classifies the peripheral cycles of H",
+      "status": "formally_verified_and_finitely_cross_checked"
+    },
+    {
+      "claim": "For every strictly positive real edge weighting of H, some cycle is geodesic and nonperipheral.",
+      "claim_id": "C03",
+      "evidence": [
+        "formal/replay-receipt.json",
+        "formal/axiom-audit.txt"
+      ],
+      "forbidden_extensions": [
+        "all nonnegative weights",
+        "all infinite graphs"
+      ],
+      "permitted_wording": "the accepted and replayed Lean theorem proves the all-positive-real-weights counterexample statement",
+      "status": "accepted_lean_and_exact_toolchain_replayed"
+    },
+    {
+      "claim": "Under the audited canonical formulation, C03 gives a negative answer to OPG-500.",
+      "claim_id": "C04",
+      "evidence": [
+        "evidence/statement-faithfulness.md",
+        "evidence/statement-faithfulness.json",
+        "inputs/source-readback.md"
+      ],
+      "forbidden_extensions": [
+        "unqualified universally verified solution"
+      ],
+      "permitted_wording": "gives a negative answer to OPG-500 under the audited problem formulation",
+      "status": "draft_statement_audit_pass_pending_trusted_signature"
+    },
+    {
+      "claim": "The platform readback records the root theorem as Proved, submission ACCEPTED, and open leaves 0.",
+      "claim_id": "C05",
+      "evidence": [
+        "inputs/fixed-revision/research/artifacts/candidates/opg500-a01-c21-prove2me-root-replay/platform-readback.json"
+      ],
+      "forbidden_extensions": [
+        "journal accepted",
+        "repository admitted"
+      ],
+      "permitted_wording": "the frozen platform readback records an accepted submission and zero open leaves",
+      "status": "frozen_public_readback"
+    },
+    {
+      "claim": "The publication workspace replay compiled all five target modules at exact Lean and Mathlib pins.",
+      "claim_id": "C06",
+      "evidence": [
+        "formal/replay-receipt.json",
+        "formal/logs/"
+      ],
+      "forbidden_extensions": [
+        "CI proves the theorem",
+        "axiom-free"
+      ],
+      "permitted_wording": "an exact-toolchain replay completed successfully",
+      "status": "verified_in_this_workspace"
+    },
+    {
+      "claim": "Every printed target reports only propext, Classical.choice, and Quot.sound.",
+      "claim_id": "C07",
+      "evidence": [
+        "formal/axiom-audit.txt"
+      ],
+      "forbidden_extensions": [
+        "no axioms are used"
+      ],
+      "permitted_wording": "the recorded axiom report is [propext, Classical.choice, Quot.sound]",
+      "status": "verified_in_this_workspace"
+    },
+    {
+      "claim": "Repository-level trusted Result admission is pending.",
+      "claim_id": "C08",
+      "evidence": [
+        "inputs/fixed-revision/research/artifacts/candidates/opg500-a01-c21-prove2me-root-replay/README.md",
+        "evidence/TRUSTED_ACTIONS_REQUIRED.md"
+      ],
+      "forbidden_extensions": [
+        "admitted Result",
+        "Solution View complete"
+      ],
+      "permitted_wording": "trusted repository admission is pending",
+      "status": "verified_process_status"
+    },
+    {
+      "claim": "Conventional external peer review has not been completed.",
+      "claim_id": "C09",
+      "evidence": [
+        "STATUS.md"
+      ],
+      "forbidden_extensions": [
+        "peer reviewed",
+        "journal accepted"
+      ],
+      "permitted_wording": "not yet externally peer reviewed",
+      "status": "verified_process_status"
+    },
+    {
+      "claim": "The current evidence does not establish that eight vertices is minimal.",
+      "claim_id": "C10",
+      "evidence": [
+        "evidence/statement-faithfulness.md"
+      ],
+      "forbidden_extensions": [
+        "smallest counterexample"
+      ],
+      "permitted_wording": "minimality is not claimed",
+      "status": "verified_limitation"
+    },
+    {
+      "claim": "The proof uses the finite weighted geodetic-cycle generation theorem of Georgakopoulos and Sprüssel as a formally reproved dependency.",
+      "claim_id": "C11",
+      "evidence": [
+        "review/citation-audit.md",
+        "formal/paper-lean-crosswalk.csv"
+      ],
+      "forbidden_extensions": [
+        "new cycle-generation theorem"
+      ],
+      "permitted_wording": "the proof uses and formalizes finite weighted geodesic cycle-space generation",
+      "status": "verified"
+    }
+  ],
+  "draft_label": "DRAFT — NOT YET EXTERNALLY PEER REVIEWED",
+  "generated_at": "2026-09-09T03:08:56Z",
+  "global_required_status_sentence": "The root mathematical statement has an accepted Lean proof and an exact-toolchain replay. The proof materials are public. Repository-level trusted Result admission and conventional external peer review are separate processes and are not implied by those facts.",
+  "remote_publication_authorized": false,
+  "schema": "opg500.claim-ledger.v1"
+}

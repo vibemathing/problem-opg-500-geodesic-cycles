@@ -1,0 +1,16 @@
+paper_item,paper_statement,lean_declaration,source_file,status
+Def. 2.1,finite simple weighted graph,OPG500Counterexample.EdgeWeight; OPG500Counterexample.IsPositive,Definitions/Def_opg500_weighted_cycle_models.lean,definition
+Def. 2.2,shortest path and geodesic cycle,OPG500Counterexample.Walk.IsShortest; OPG500Counterexample.Cycle.IsGeodesic,Definitions/Def_opg500_weighted_cycle_models.lean,definition
+Def. 2.3,peripheral cycle and 3-connectivity,OPG500Counterexample.Cycle.IsPeripheral; OPG500Counterexample.IsThreeConnected,Definitions/Def_opg500_weighted_cycle_models.lean,definition
+Def. 3.1,the graph H and its 18 edges,OPG500Counterexample.H; OPG500Counterexample.eightVertexEdges,Definitions/Def_opg500_eight_vertex_graph.lean,definition
+Prop. 3.2,H is 3-connected and its peripheral cycles are 12 triangles,OPG500Counterexample.eight_vertex_graph_structure,Theorems/Thm_OPG500Counterexample_eight_vertex_graph_structure.lean,kernel-replayed
+Lemma 4.1,shortest-path/tight-edge metric bridge,OPG500Counterexample.tight_edge_metric_bridge,Theorems/Thm_OPG500Counterexample_tight_edge_metric_bridge.lean,kernel-replayed
+Lemma 4.2,non-tight edge has a tight two-edge replacement under the contradiction hypothesis,OPG500Assembly.nontight_twoStep,Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean,kernel-replayed
+Lemma 4.3,tight core is triangle-free and tight links dominate,OPG500Assembly.tightCore_triangleFree; OPG500Assembly.tightLinks_dominates,Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean,kernel-replayed
+Lemma 4.4,four-core link rank gap,OPG500Counterexample.core_link_rank_gap,Theorems/Thm_OPG500Counterexample_core_link_rank_gap.lean,kernel-replayed
+Lemma 4.5,peripheral triangle generator count is below tight-graph cycle rank,OPG500Assembly.tight_link_triangle_count_lt_cycle_rank; OPG500Assembly.triangleGenerators_card_le_link_edges,Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean,kernel-replayed
+Lemma 4.6,a connected graph has a cycle outside an undersized finite span,OPG500Assembly.exists_cycle_outside_finite_span,Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean,kernel-replayed
+Theorem 4.7,positive-weight geodesic cycles generate the finite cycle space,OPG500Counterexample.finite_geodesic_cycles_generate,Theorems/Thm_OPG500Counterexample_finite_geodesic_cycles_generate.lean,kernel-replayed
+Lemma 4.8,outside-cycle obstruction can be chosen geodesic,OPG500Assembly.exists_geodesic_outside_submodule,Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean,kernel-replayed
+Theorem 4.9,eight-vertex counterexample,OPG500Counterexample.eight_vertex_counterexample,Theorems/Thm_OPG500Counterexample_eight_vertex_counterexample.lean,accepted-and-kernel-replayed
+Cor. 4.10,negative answer to the canonical OPG-500 assertion,logical consequence of OPG500Counterexample.eight_vertex_counterexample,paper/main.tex,paper consequence; pending trusted statement-faithfulness admission
